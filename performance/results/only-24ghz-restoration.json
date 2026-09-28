@@ -1,0 +1,16 @@
+{
+  "route": "223.5.5.5 via 10.40.72.1 dev phy0-sta0 table 4 src 10.40.72.252 mark 0x400 uid 0 \n    cache \n",
+  "rule_counters": "Chain perf_only24 (1 references)\n    pkts      bytes target     prot opt in     out     source               destination         \n      32     1664 MARK       all  --  *      *       0.0.0.0/0            0.0.0.0/0            MARK xset 0x400/0x3f00\n",
+  "restored": {
+    "campus": true,
+    "wireless": true,
+    "mwan3": true
+  },
+  "wan_ip": [
+    {
+      "address": "10.200.19.63",
+      "mask": 32,
+      "ptpaddress": "10.200.16.0"
+    }
+  ]
+}
