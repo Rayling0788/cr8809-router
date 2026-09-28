@@ -1,0 +1,4 @@
+{
+  "ipv4": "curl: (28) Operation timed out after 18000 milliseconds with 146669568 out of 3303444480 bytes received\nhttp=200 bytes=146669568 seconds=18.000929 bytes_per_second=8147888 remote=202.38.95.110",
+  "ipv6": "curl: (28) Operation timed out after 18000 milliseconds with 151732206 out of 3303444480 bytes received\nhttp=200 bytes=151732206 seconds=18.000664 bytes_per_second=8429256 remote=2001:da8:d800:95::110"
+}
