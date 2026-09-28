@@ -1,0 +1,8 @@
+
+config campus 'main'
+	option enabled '1'
+	option wifi_count '1'
+	option policy 'wan_priority'
+	option check_interval '60'
+	option single_wifi 'wwan2'
+

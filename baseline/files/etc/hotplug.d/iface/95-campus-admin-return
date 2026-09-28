@@ -1,0 +1,9 @@
+#!/bin/sh
+# Keep replies from the wired WAN address on the wired WAN routing table.
+[ "$INTERFACE" = wan ] || exit 0
+case "$ACTION" in ifup|ifupdate|ifdown) ;; *) exit 0;; esac
+while ip -4 rule del pref 111 2>/dev/null; do :; done
+[ "$ACTION" = ifdown ] && exit 0
+addr=$(ubus call network.interface.wan status | jsonfilter -e '@["ipv4-address"][0].address')
+[ -n "$addr" ] || exit 0
+ip -4 rule add pref 111 from "$addr/32" to 10.0.0.0/8 lookup 1

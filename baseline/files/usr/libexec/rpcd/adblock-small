@@ -1,0 +1,65 @@
+#!/bin/sh
+. /usr/share/libubox/jshn.sh
+HOSTS=/etc/adblock-small.hosts
+SOURCE=/etc/adblock-small.source.hosts
+ALLOW=/etc/adblock-small.allow
+enabled() {
+  case " $(uci -q get dhcp.@dnsmasq[0].addnhosts) " in *" $HOSTS "*) return 0;; *) return 1;; esac
+}
+status() {
+  json_init
+  json_add_boolean enabled "$(enabled && echo 1 || echo 0)"
+  running=0
+  if enabled && pidof dnsmasq >/dev/null && grep -q "^addn-hosts=$HOSTS$" /var/etc/dnsmasq.conf.*; then running=1; fi
+  json_add_boolean loaded "$running"
+  json_add_int total "$(awk '$1=="0.0.0.0" {n++} END {print n+0}' "$SOURCE")"
+  json_add_int filtered "$(awk '$1=="0.0.0.0" {n++} END {print n+0}' "$HOSTS")"
+  json_add_string allowlist "$(cat "$ALLOW" 2>/dev/null)"
+  json_add_string cache "$(uci -q get dhcp.@dnsmasq[0].cachesize)"
+  json_dump
+}
+fail() { json_init; json_add_boolean ok 0; json_add_string error "$1"; json_dump; }
+case "$1:$2" in
+  list:*) echo '{"status":{},"apply":{"enabled":true,"allowlist":""}}';;
+  call:status) status;;
+  call:apply)
+    read -r input
+    json_load "$input" || { fail 'Invalid request'; exit 0; }
+    json_get_var desired enabled
+    json_get_var allowlist allowlist
+    case "$desired" in 0|1) ;; *) fail 'Invalid switch value'; exit 0;; esac
+    [ "${#allowlist}" -le 8192 ] || { fail 'Allowlist too long (max 8192 characters)'; exit 0; }
+    mkdir /tmp/adblock-small-edit.lock 2>/dev/null || { fail 'Another change is in progress'; exit 0; }
+    work=$(mktemp -d /tmp/adblock-small-edit.XXXXXX)
+    [ -n "$work" ] || { rmdir /tmp/adblock-small-edit.lock; fail 'No temporary space'; exit 0; }
+    trap 'rm -f "$work/allow" "$work/hosts" "$work/dhcp" "$work/oldhosts" "$work/oldallow"; rmdir "$work" /tmp/adblock-small-edit.lock' EXIT
+    printf '%s\n' "$allowlist" | awk '
+      {gsub(/\r/, ""); gsub(/^[ \t]+|[ \t]+$/, ""); d=tolower($0); if(d=="")next;
+       if(length(d)>253 || d !~ /\./)exit 1;
+       n=split(d,a,"."); for(i=1;i<=n;i++)if(length(a[i])>63 || a[i] !~ /^[a-z0-9]([a-z0-9-]*[a-z0-9])?$/)exit 1;
+       if(!seen[d]++){if(++count>100)exit 1; print d}}
+    ' > "$work/allow" || { fail 'Use one exact domain per line, no URLs or wildcards; max 100 domains'; exit 0; }
+    awk 'FILENAME==ARGV[1] {allow[$0]=1;next} /^#/ {print;next} !($2 in allow) {print}' "$work/allow" "$SOURCE" > "$work/hosts"
+    [ -s "$work/hosts" ] || { fail 'Rule generation failed'; exit 0; }
+    [ -z "$(uci changes dhcp)" ] || { fail 'Please save or discard pending DHCP changes first'; exit 0; }
+    cp /etc/config/dhcp "$work/dhcp"
+    cp "$HOSTS" "$work/oldhosts"
+    cp "$ALLOW" "$work/oldallow"
+    cp "$work/hosts" "$HOSTS"
+    cp "$work/allow" "$ALLOW"
+    chmod 644 "$HOSTS"
+    uci -q del_list dhcp.@dnsmasq[0].addnhosts="$HOSTS"
+    [ "$desired" = 0 ] || uci add_list dhcp.@dnsmasq[0].addnhosts="$HOSTS"
+    if uci commit dhcp && /etc/init.d/dnsmasq restart >/tmp/adblock-small-apply.log 2>&1 && pidof dnsmasq >/dev/null; then
+      json_init; json_add_boolean ok 1; json_dump
+    else
+      cp "$work/dhcp" /etc/config/dhcp
+      cp "$work/oldhosts" "$HOSTS"
+      cp "$work/oldallow" "$ALLOW"
+      chmod 644 "$HOSTS"
+      /etc/init.d/dnsmasq restart >>/tmp/adblock-small-apply.log 2>&1
+      fail 'DNS restart failed; previous configuration restored'
+    fi
+    ;;
+  *) exit 1;;
+esac

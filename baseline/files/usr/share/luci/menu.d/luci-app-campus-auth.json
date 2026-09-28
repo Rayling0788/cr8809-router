@@ -1,0 +1,7 @@
+{
+	"admin/network/campus-auth": {
+		"title": "校园网自动认证",
+		"order": 605,
+		"action": { "type": "view", "path": "campus/auth" }
+	}
+}

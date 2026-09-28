@@ -1,0 +1,62 @@
+
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fd01:63ac:c9cc::/48'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'lan1'
+	list ports 'lan2'
+	list ports 'lan3'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+
+config interface 'wan'
+	option device 'wan'
+	option proto 'pppoe'
+	option metric '10'
+	option password '[REDACTED]'
+	option username '[REDACTED]'
+
+config interface 'wan6'
+	option device 'wan'
+	option proto 'dhcpv6'
+
+config interface 'wwan2'
+	option proto 'dhcp'
+	option metric '20'
+
+config interface 'wwan3'
+	option proto 'dhcp'
+	option metric '30'
+
+config interface 'wgdorm'
+	option proto 'wireguard'
+	option private_key '[REDACTED]'
+	option mtu '1380'
+	list addresses '10.77.88.2/24'
+
+config wireguard_wgdorm 'dorm_server'
+	option public_key '[REDACTED]'
+	option endpoint_host '8.163.113.0'
+	option endpoint_port '51820'
+	option persistent_keepalive '25'
+	option route_allowed_ips '1'
+	list allowed_ips '10.77.88.0/24'
+
+config rule 'dorm_route'
+	option dest '10.77.88.0/24'
+	option lookup 'main'
+	option priority '100'
+

@@ -1,0 +1,6 @@
+{
+  "luci-app-campus-dashboard": {
+    "description": "Read-only uplink traffic dashboard",
+    "read": {"ubus": {"campus-dashboard": ["snapshot"]}}
+  }
+}

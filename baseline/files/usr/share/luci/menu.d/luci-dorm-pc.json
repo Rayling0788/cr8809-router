@@ -1,0 +1,1 @@
+{"admin/network/dorm-pc": {"title": "远程开机与取文件", "order": 607, "action": {"type": "view", "path": "campus/dorm-pc"}, "depends": {"acl": ["luci-app-dorm-pc"]}}}

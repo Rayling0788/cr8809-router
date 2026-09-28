@@ -1,0 +1,8 @@
+{
+  "admin/status/campus-dashboard": {
+    "title": "多线路流量看板",
+    "order": 15,
+    "action": {"type": "view", "path": "campus/dashboard"},
+    "depends": {"acl": ["luci-app-campus-dashboard"]}
+  }
+}

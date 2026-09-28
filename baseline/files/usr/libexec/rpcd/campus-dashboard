@@ -1,0 +1,50 @@
+#!/bin/sh
+case "$1:$2" in
+  list:*) echo '{"snapshot":{}}'; exit 0 ;;
+  call:snapshot) ;;
+  *) exit 1 ;;
+esac
+. /usr/share/libubox/jshn.sh
+read -r tick rest < /proc/uptime
+json_init
+json_add_string tick "$tick"
+json_add_string boot_id "$(cat /proc/sys/kernel/random/boot_id)"
+json_add_string policy "$(uci -q get mwan3.default_rule_v4.use_policy)"
+json_add_string requested_policy "$(uci -q get campus.main.policy)"
+json_add_string wifi_count "$(uci -q get campus.main.wifi_count)"
+json_add_array lines
+for iface in wan wwan2 wwan3; do
+  status="$(ubus call network.interface.$iface status 2>/dev/null)"
+  dev="$(printf '%s' "$status" | jsonfilter -e '@.l3_device')"
+  up="$(printf '%s' "$status" | jsonfilter -e '@.up')"
+  age="$(printf '%s' "$status" | jsonfilter -e '@.uptime')"
+  addr="$(printf '%s' "$status" | jsonfilter -e '@["ipv4-address"][0].address')"
+  rx=0; tx=0; valid=0
+  case "$dev" in ''|*[!a-zA-Z0-9_.:-]*) dev='' ;; *)
+    if [ -r "/sys/class/net/$dev/statistics/rx_bytes" ]; then
+      read -r rx < "/sys/class/net/$dev/statistics/rx_bytes"
+      read -r tx < "/sys/class/net/$dev/statistics/tx_bytes"
+      valid=1
+    fi ;;
+  esac
+  enabled=1
+  case "$iface" in
+    wwan2) [ "$(uci -q get wireless.wwan2_radio1.disabled)" = 1 ] && enabled=0 ;;
+    wwan3) [ "$(uci -q get wireless.wwan3_radio0.disabled)" = 1 ] && enabled=0 ;;
+  esac
+  tracked="$(cat /var/run/mwan3track/$iface/STATUS 2>/dev/null)"
+  json_add_object ''
+  json_add_string id "$iface"
+  json_add_string device "$dev"
+  json_add_string address "$addr"
+  json_add_boolean up "$([ "$up" = true ] && echo 1 || echo 0)"
+  json_add_boolean enabled "$enabled"
+  json_add_boolean valid "$valid"
+  json_add_string tracking "${tracked:-unknown}"
+  json_add_string uptime "${age:-0}"
+  json_add_string rx "$rx"
+  json_add_string tx "$tx"
+  json_close_object
+done
+json_close_array
+json_dump

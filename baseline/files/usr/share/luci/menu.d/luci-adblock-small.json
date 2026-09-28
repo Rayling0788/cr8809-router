@@ -1,0 +1,1 @@
+{"admin/network/adblock-small":{"title":"轻量去广告","order":606,"action":{"type":"view","path":"campus/adblock"},"depends":{"acl":["luci-app-adblock-small"]}}}

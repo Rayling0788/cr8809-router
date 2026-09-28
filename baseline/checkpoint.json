@@ -1,0 +1,5 @@
+{
+  "time": "20260928-164750",
+  "private_rollback_directory": "backups\\before-performance-20260928-164750",
+  "purpose": "Before lightweight routing/rate-limit and SQM comparison"
+}

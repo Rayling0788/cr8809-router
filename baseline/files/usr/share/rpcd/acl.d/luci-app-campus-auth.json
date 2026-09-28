@@ -1,0 +1,7 @@
+{
+	"luci-app-campus-auth": {
+		"description": "Campus Wi-Fi authentication settings",
+		"read": { "uci": [ "campus" ] },
+		"write": { "uci": [ "campus" ] }
+	}
+}

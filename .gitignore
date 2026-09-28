@@ -1,0 +1,8 @@
+/*
+!/.gitignore
+!/README.md
+!/baseline/
+!/performance/
+/performance/private/
+/performance/downloads/
+__pycache__/
