@@ -1,0 +1,24 @@
+{
+  "dynamic-spillover": {
+    "download_MBps": 11.241982617874218,
+    "wired_mean_ms": 23.51527906976744,
+    "wired_max_ms": 69.001,
+    "received": 43,
+    "sent": 46,
+    "busy_core_mean": 91.50111111111111,
+    "download_errors": [
+      [
+        "<urlopen error timed out>"
+      ]
+    ]
+  },
+  "spillover-static-control": {
+    "download_MBps": 14.356190969698519,
+    "wired_mean_ms": 26.948372093023256,
+    "wired_max_ms": 75.365,
+    "received": 43,
+    "sent": 46,
+    "busy_core_mean": 93.92,
+    "download_errors": []
+  }
+}

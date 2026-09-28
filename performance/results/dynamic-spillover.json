@@ -1,0 +1,262 @@
+{
+  "label": "dynamic-spillover",
+  "latency": {
+    "pppoe-wan": {
+      "raw": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=50 time=20.207 ms\n64 bytes from 8.163.113.0: seq=1 ttl=50 time=19.575 ms\n64 bytes from 8.163.113.0: seq=2 ttl=50 time=18.656 ms\n64 bytes from 8.163.113.0: seq=3 ttl=50 time=19.198 ms\n64 bytes from 8.163.113.0: seq=4 ttl=50 time=19.501 ms\n64 bytes from 8.163.113.0: seq=5 ttl=50 time=19.555 ms\n64 bytes from 8.163.113.0: seq=6 ttl=50 time=19.457 ms\n64 bytes from 8.163.113.0: seq=7 ttl=50 time=18.876 ms\n64 bytes from 8.163.113.0: seq=8 ttl=50 time=19.451 ms\n64 bytes from 8.163.113.0: seq=10 ttl=50 time=19.595 ms\n64 bytes from 8.163.113.0: seq=11 ttl=50 time=20.018 ms\n64 bytes from 8.163.113.0: seq=12 ttl=50 time=21.045 ms\n64 bytes from 8.163.113.0: seq=13 ttl=50 time=19.497 ms\n64 bytes from 8.163.113.0: seq=14 ttl=50 time=19.420 ms\n64 bytes from 8.163.113.0: seq=15 ttl=50 time=19.263 ms\n64 bytes from 8.163.113.0: seq=16 ttl=50 time=22.011 ms\n64 bytes from 8.163.113.0: seq=17 ttl=50 time=20.523 ms\n64 bytes from 8.163.113.0: seq=18 ttl=50 time=20.297 ms\n64 bytes from 8.163.113.0: seq=19 ttl=50 time=20.261 ms\n64 bytes from 8.163.113.0: seq=20 ttl=50 time=23.141 ms\n64 bytes from 8.163.113.0: seq=21 ttl=50 time=21.422 ms\n64 bytes from 8.163.113.0: seq=22 ttl=50 time=20.652 ms\n64 bytes from 8.163.113.0: seq=23 ttl=50 time=19.399 ms\n64 bytes from 8.163.113.0: seq=24 ttl=50 time=19.282 ms\n64 bytes from 8.163.113.0: seq=25 ttl=50 time=20.203 ms\n64 bytes from 8.163.113.0: seq=26 ttl=50 time=25.204 ms\n64 bytes from 8.163.113.0: seq=27 ttl=50 time=26.766 ms\n64 bytes from 8.163.113.0: seq=28 ttl=50 time=23.318 ms\n64 bytes from 8.163.113.0: seq=29 ttl=50 time=26.172 ms\n64 bytes from 8.163.113.0: seq=30 ttl=50 time=24.633 ms\n64 bytes from 8.163.113.0: seq=31 ttl=50 time=28.102 ms\n64 bytes from 8.163.113.0: seq=32 ttl=50 time=28.490 ms\n64 bytes from 8.163.113.0: seq=33 ttl=50 time=26.110 ms\n64 bytes from 8.163.113.0: seq=34 ttl=50 time=69.001 ms\n64 bytes from 8.163.113.0: seq=35 ttl=50 time=23.931 ms\n64 bytes from 8.163.113.0: seq=36 ttl=50 time=27.426 ms\n64 bytes from 8.163.113.0: seq=37 ttl=50 time=25.750 ms\n64 bytes from 8.163.113.0: seq=38 ttl=50 time=27.059 ms\n64 bytes from 8.163.113.0: seq=40 ttl=50 time=23.307 ms\n64 bytes from 8.163.113.0: seq=41 ttl=50 time=23.324 ms\n64 bytes from 8.163.113.0: seq=42 ttl=50 time=30.695 ms\n64 bytes from 8.163.113.0: seq=44 ttl=50 time=31.777 ms\n64 bytes from 8.163.113.0: seq=45 ttl=50 time=19.587 ms\n64 bytes from 8.163.113.0: seq=46 ttl=50 time=19.861 ms\n64 bytes from 8.163.113.0: seq=47 ttl=50 time=19.163 ms\n64 bytes from 8.163.113.0: seq=48 ttl=50 time=19.749 ms\n64 bytes from 8.163.113.0: seq=49 ttl=50 time=20.603 ms\n64 bytes from 8.163.113.0: seq=50 ttl=50 time=19.557 ms\n64 bytes from 8.163.113.0: seq=51 ttl=50 time=22.537 ms\n64 bytes from 8.163.113.0: seq=52 ttl=50 time=19.496 ms\n64 bytes from 8.163.113.0: seq=53 ttl=50 time=25.186 ms\n64 bytes from 8.163.113.0: seq=54 ttl=50 time=19.968 ms\n64 bytes from 8.163.113.0: seq=55 ttl=50 time=22.077 ms\n64 bytes from 8.163.113.0: seq=56 ttl=50 time=19.096 ms\n64 bytes from 8.163.113.0: seq=57 ttl=50 time=19.657 ms\n64 bytes from 8.163.113.0: seq=58 ttl=50 time=19.413 ms\n64 bytes from 8.163.113.0: seq=59 ttl=50 time=19.535 ms\n64 bytes from 8.163.113.0: seq=60 ttl=50 time=23.402 ms\n64 bytes from 8.163.113.0: seq=61 ttl=50 time=19.391 ms\n64 bytes from 8.163.113.0: seq=62 ttl=50 time=18.872 ms\n64 bytes from 8.163.113.0: seq=63 ttl=50 time=19.840 ms\n64 bytes from 8.163.113.0: seq=64 ttl=50 time=18.824 ms\n64 bytes from 8.163.113.0: seq=65 ttl=50 time=19.185 ms\n64 bytes from 8.163.113.0: seq=66 ttl=50 time=19.317 ms\n64 bytes from 8.163.113.0: seq=67 ttl=50 time=19.857 ms\n64 bytes from 8.163.113.0: seq=68 ttl=50 time=19.393 ms\n64 bytes from 8.163.113.0: seq=69 ttl=50 time=19.183 ms\n64 bytes from 8.163.113.0: seq=70 ttl=50 time=23.027 ms\n64 bytes from 8.163.113.0: seq=71 ttl=50 time=18.969 ms\n64 bytes from 8.163.113.0: seq=72 ttl=50 time=19.097 ms\n64 bytes from 8.163.113.0: seq=73 ttl=50 time=19.256 ms\n64 bytes from 8.163.113.0: seq=74 ttl=50 time=20.207 ms\n64 bytes from 8.163.113.0: seq=75 ttl=50 time=18.919 ms\n64 bytes from 8.163.113.0: seq=76 ttl=50 time=20.244 ms\n64 bytes from 8.163.113.0: seq=77 ttl=50 time=19.919 ms\n64 bytes from 8.163.113.0: seq=78 ttl=50 time=19.429 ms\n64 bytes from 8.163.113.0: seq=79 ttl=50 time=20.101 ms\n64 bytes from 8.163.113.0: seq=80 ttl=50 time=18.906 ms\n64 bytes from 8.163.113.0: seq=81 ttl=50 time=19.209 ms\n64 bytes from 8.163.113.0: seq=82 ttl=50 time=19.094 ms\n64 bytes from 8.163.113.0: seq=83 ttl=50 time=20.280 ms\n64 bytes from 8.163.113.0: seq=84 ttl=50 time=19.512 ms\n\n--- 8.163.113.0 ping statistics ---\n85 packets transmitted, 82 packets received, 3% packet loss\nround-trip min/avg/max = 18.656/21.835/69.001 ms\n",
+      "received": 82,
+      "sent": 85,
+      "mean_ms": 21.84,
+      "p95_ms": 28.102,
+      "max_ms": 69.001
+    },
+    "phy1-sta0": {
+      "raw": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=49 time=18.805 ms\n64 bytes from 8.163.113.0: seq=1 ttl=49 time=19.381 ms\n64 bytes from 8.163.113.0: seq=2 ttl=49 time=19.490 ms\n64 bytes from 8.163.113.0: seq=3 ttl=49 time=19.943 ms\n64 bytes from 8.163.113.0: seq=4 ttl=49 time=19.223 ms\n64 bytes from 8.163.113.0: seq=5 ttl=49 time=19.259 ms\n64 bytes from 8.163.113.0: seq=6 ttl=49 time=19.266 ms\n64 bytes from 8.163.113.0: seq=7 ttl=49 time=18.652 ms\n64 bytes from 8.163.113.0: seq=8 ttl=49 time=20.033 ms\n64 bytes from 8.163.113.0: seq=9 ttl=49 time=19.999 ms\n64 bytes from 8.163.113.0: seq=10 ttl=49 time=19.954 ms\n64 bytes from 8.163.113.0: seq=11 ttl=49 time=20.239 ms\n64 bytes from 8.163.113.0: seq=12 ttl=49 time=20.144 ms\n64 bytes from 8.163.113.0: seq=13 ttl=49 time=19.851 ms\n64 bytes from 8.163.113.0: seq=14 ttl=49 time=19.737 ms\n64 bytes from 8.163.113.0: seq=15 ttl=49 time=20.752 ms\n64 bytes from 8.163.113.0: seq=16 ttl=49 time=27.872 ms\n64 bytes from 8.163.113.0: seq=17 ttl=49 time=25.358 ms\n64 bytes from 8.163.113.0: seq=18 ttl=49 time=21.772 ms\n64 bytes from 8.163.113.0: seq=19 ttl=49 time=19.895 ms\n64 bytes from 8.163.113.0: seq=20 ttl=49 time=21.611 ms\n64 bytes from 8.163.113.0: seq=21 ttl=49 time=20.225 ms\n64 bytes from 8.163.113.0: seq=22 ttl=49 time=20.225 ms\n64 bytes from 8.163.113.0: seq=23 ttl=49 time=19.570 ms\n64 bytes from 8.163.113.0: seq=24 ttl=49 time=35.809 ms\n64 bytes from 8.163.113.0: seq=25 ttl=49 time=52.597 ms\n64 bytes from 8.163.113.0: seq=26 ttl=49 time=70.110 ms\n64 bytes from 8.163.113.0: seq=27 ttl=49 time=68.246 ms\n64 bytes from 8.163.113.0: seq=28 ttl=49 time=70.463 ms\n64 bytes from 8.163.113.0: seq=29 ttl=49 time=80.634 ms\n64 bytes from 8.163.113.0: seq=30 ttl=49 time=71.595 ms\n64 bytes from 8.163.113.0: seq=31 ttl=49 time=59.676 ms\n64 bytes from 8.163.113.0: seq=32 ttl=49 time=59.830 ms\n64 bytes from 8.163.113.0: seq=33 ttl=49 time=60.922 ms\n64 bytes from 8.163.113.0: seq=34 ttl=49 time=23.227 ms\n64 bytes from 8.163.113.0: seq=35 ttl=49 time=18.889 ms\n64 bytes from 8.163.113.0: seq=36 ttl=49 time=20.049 ms\n64 bytes from 8.163.113.0: seq=37 ttl=49 time=20.916 ms\n64 bytes from 8.163.113.0: seq=38 ttl=49 time=20.997 ms\n64 bytes from 8.163.113.0: seq=39 ttl=49 time=21.071 ms\n64 bytes from 8.163.113.0: seq=40 ttl=49 time=20.012 ms\n64 bytes from 8.163.113.0: seq=41 ttl=49 time=27.795 ms\n64 bytes from 8.163.113.0: seq=42 ttl=49 time=72.109 ms\n64 bytes from 8.163.113.0: seq=43 ttl=49 time=72.427 ms\n64 bytes from 8.163.113.0: seq=44 ttl=49 time=64.349 ms\n64 bytes from 8.163.113.0: seq=45 ttl=49 time=30.546 ms\n64 bytes from 8.163.113.0: seq=46 ttl=49 time=19.367 ms\n64 bytes from 8.163.113.0: seq=47 ttl=49 time=21.267 ms\n64 bytes from 8.163.113.0: seq=48 ttl=49 time=20.441 ms\n64 bytes from 8.163.113.0: seq=49 ttl=49 time=20.618 ms\n64 bytes from 8.163.113.0: seq=50 ttl=49 time=19.843 ms\n64 bytes from 8.163.113.0: seq=51 ttl=49 time=19.420 ms\n64 bytes from 8.163.113.0: seq=52 ttl=49 time=20.265 ms\n64 bytes from 8.163.113.0: seq=53 ttl=49 time=19.039 ms\n64 bytes from 8.163.113.0: seq=54 ttl=49 time=19.248 ms\n64 bytes from 8.163.113.0: seq=55 ttl=49 time=19.777 ms\n64 bytes from 8.163.113.0: seq=56 ttl=49 time=19.843 ms\n64 bytes from 8.163.113.0: seq=57 ttl=49 time=24.866 ms\n64 bytes from 8.163.113.0: seq=58 ttl=49 time=19.151 ms\n64 bytes from 8.163.113.0: seq=59 ttl=49 time=20.023 ms\n64 bytes from 8.163.113.0: seq=60 ttl=49 time=19.586 ms\n64 bytes from 8.163.113.0: seq=61 ttl=49 time=20.490 ms\n64 bytes from 8.163.113.0: seq=62 ttl=49 time=22.820 ms\n64 bytes from 8.163.113.0: seq=63 ttl=49 time=19.445 ms\n64 bytes from 8.163.113.0: seq=64 ttl=49 time=20.133 ms\n64 bytes from 8.163.113.0: seq=65 ttl=49 time=26.006 ms\n64 bytes from 8.163.113.0: seq=66 ttl=49 time=21.203 ms\n64 bytes from 8.163.113.0: seq=67 ttl=49 time=21.314 ms\n64 bytes from 8.163.113.0: seq=68 ttl=49 time=19.780 ms\n64 bytes from 8.163.113.0: seq=69 ttl=49 time=19.438 ms\n64 bytes from 8.163.113.0: seq=70 ttl=49 time=21.161 ms\n64 bytes from 8.163.113.0: seq=71 ttl=49 time=19.193 ms\n64 bytes from 8.163.113.0: seq=72 ttl=49 time=19.910 ms\n64 bytes from 8.163.113.0: seq=73 ttl=49 time=20.411 ms\n64 bytes from 8.163.113.0: seq=74 ttl=49 time=19.929 ms\n64 bytes from 8.163.113.0: seq=75 ttl=49 time=19.612 ms\n64 bytes from 8.163.113.0: seq=76 ttl=49 time=22.626 ms\n64 bytes from 8.163.113.0: seq=77 ttl=49 time=20.147 ms\n64 bytes from 8.163.113.0: seq=78 ttl=49 time=19.013 ms\n64 bytes from 8.163.113.0: seq=79 ttl=49 time=18.674 ms\n64 bytes from 8.163.113.0: seq=80 ttl=49 time=19.009 ms\n64 bytes from 8.163.113.0: seq=81 ttl=49 time=19.731 ms\n64 bytes from 8.163.113.0: seq=82 ttl=49 time=19.527 ms\n64 bytes from 8.163.113.0: seq=83 ttl=49 time=19.971 ms\n64 bytes from 8.163.113.0: seq=84 ttl=49 time=19.084 ms\n\n--- 8.163.113.0 ping statistics ---\n85 packets transmitted, 85 packets received, 0% packet loss\nround-trip min/avg/max = 18.652/27.351/80.634 ms\n",
+      "received": 85,
+      "sent": 85,
+      "mean_ms": 27.35,
+      "p95_ms": 70.463,
+      "max_ms": 80.634
+    }
+  },
+  "intervals": [
+    {
+      "cpu_total_core0_core1": [
+        40.98,
+        79.35,
+        6.15
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        100.369,
+        3.915,
+        38.792,
+        2.718
+      ],
+      "available_kib": 8384
+    },
+    {
+      "cpu_total_core0_core1": [
+        44.05,
+        86.54,
+        7.2
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        107.792,
+        4.642,
+        37.78,
+        2.716
+      ],
+      "available_kib": 7448
+    },
+    {
+      "cpu_total_core0_core1": [
+        41.52,
+        86.62,
+        4.61
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        105.617,
+        4.939,
+        38.097,
+        2.383
+      ],
+      "available_kib": 7068
+    },
+    {
+      "cpu_total_core0_core1": [
+        42.45,
+        86.36,
+        5.96
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        105.672,
+        5.355,
+        38.926,
+        1.548
+      ],
+      "available_kib": 7036
+    },
+    {
+      "cpu_total_core0_core1": [
+        42.41,
+        87.01,
+        3.25
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        103.508,
+        5.172,
+        48.917,
+        2.039
+      ],
+      "available_kib": 7720
+    },
+    {
+      "cpu_total_core0_core1": [
+        53.42,
+        100.0,
+        6.86
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        100.5,
+        4.546,
+        88.337,
+        4.27
+      ],
+      "available_kib": 11352
+    },
+    {
+      "cpu_total_core0_core1": [
+        52.62,
+        100.0,
+        4.78
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        85.292,
+        3.8,
+        74.888,
+        4.259
+      ],
+      "available_kib": 11332
+    },
+    {
+      "cpu_total_core0_core1": [
+        53.93,
+        100.0,
+        7.25
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        91.597,
+        4.042,
+        81.882,
+        4.87
+      ],
+      "available_kib": 10360
+    },
+    {
+      "cpu_total_core0_core1": [
+        60.67,
+        97.63,
+        23.52
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        70.55,
+        3.164,
+        82.717,
+        4.615
+      ],
+      "available_kib": 8992
+    },
+    {
+      "cpu_total_core0_core1": [
+        40.29,
+        65.0,
+        16.43
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.568,
+        1.632,
+        46.806,
+        1.891
+      ],
+      "available_kib": 7116
+    },
+    {
+      "cpu_total_core0_core1": [
+        32.73,
+        63.92,
+        2.77
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.611,
+        1.617,
+        38.173,
+        2.471
+      ],
+      "available_kib": 7084
+    },
+    {
+      "cpu_total_core0_core1": [
+        35.14,
+        65.42,
+        5.85
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.903,
+        1.618,
+        37.335,
+        2.579
+      ],
+      "available_kib": 17256
+    },
+    {
+      "cpu_total_core0_core1": [
+        33.2,
+        64.73,
+        3.17
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.696,
+        1.632,
+        38.798,
+        2.567
+      ],
+      "available_kib": 17112
+    },
+    {
+      "cpu_total_core0_core1": [
+        35.24,
+        65.7,
+        5.82
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.738,
+        1.593,
+        37.866,
+        2.73
+      ],
+      "available_kib": 15576
+    },
+    {
+      "cpu_total_core0_core1": [
+        34.04,
+        65.35,
+        3.58
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.737,
+        1.624,
+        37.699,
+        2.935
+      ],
+      "available_kib": 13368
+    },
+    {
+      "cpu_total_core0_core1": [
+        32.72,
+        60.7,
+        5.8
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.772,
+        1.48,
+        34.734,
+        1.926
+      ],
+      "available_kib": 11680
+    },
+    {
+      "cpu_total_core0_core1": [
+        31.21,
+        60.16,
+        3.38
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        29.874,
+        1.526,
+        41.135,
+        1.935
+      ],
+      "available_kib": 9824
+    }
+  ],
+  "qdiscs": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc fq_codel 0: dev eth1 root refcnt 2 limit 10240p flows 1024 quantum 1516 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 \n Sent 122252728657 bytes 122446949 pkt (dropped 144751, overlimits 0 requeues 101011) \n backlog 0b 0p requeues 101011\n  maxpacket 1516 drop_overlimit 51273 new_flow_count 797918 ecn_mark 0 drop_overmemory 51273\n  new_flows_len 0 old_flows_len 0\nqdisc noqueue 0: dev lan1 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev lan2 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev lan3 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev wan root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev br-lan root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc fq_codel 0: dev pppoe-wan root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 \n Sent 2320834777 bytes 27562496 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\n  maxpacket 7460 drop_overlimit 0 new_flow_count 887 ecn_mark 0\n  new_flows_len 0 old_flows_len 0\nqdisc noqueue 0: dev wgdorm root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy1-ap0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy1-sta0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy0-ap0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\n837\n"
+}

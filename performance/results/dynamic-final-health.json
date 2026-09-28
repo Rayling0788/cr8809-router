@@ -1,0 +1,12 @@
+{
+  "network_unchanged": true,
+  "firewall_unchanged": true,
+  "mwan3_unchanged": true,
+  "dhcp_unchanged": true,
+  "uhttpd_unchanged": true,
+  "temporary_chain_remaining": "",
+  "rules": "-N mwan3_rules\n-A mwan3_rules -p tcp -m multiport --dports 443 -m mark --mark 0x0/0x3f00 -j mwan3_policy_wan_priority\n-A mwan3_rules -m mark --mark 0x0/0x3f00 -j mwan3_policy_wan_priority\n",
+  "campus_return_route": "111:\tfrom 10.200.20.122 to 10.0.0.0/8 lookup 1\n",
+  "wake": "{\n\t\"online\": true\n}\n",
+  "offload": "firewall.@defaults[0].flow_offloading='1'\nfirewall.@defaults[0].flow_offloading_hw='1'\n"
+}
