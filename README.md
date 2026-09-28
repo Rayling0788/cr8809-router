@@ -1,10 +1,16 @@
-# CR8809 router configuration checkpoints
+# CR8809 刷机与恢复归档
 
-This repository tracks redacted configuration snapshots and selected deployed custom features.
-Passwords, private keys, client profiles, raw backups and third-party downloads are excluded.
-Full rollback copies are held locally under `backups/`, outside version control.
+此仓库应保持为 **GitHub 私有仓库**。`firmware/original-device/` 保存了这台路由器的原厂分区数据，其中可能含有设备专属的无线校准、标识、后台密码和 Wi-Fi 配置；不要改为公开仓库，也不要把这些文件当作其他路由器的固件。
 
-The first commit captures the working campus HTTPS administration, symmetric wired return route,
-WireGuard dorm access, lightweight DNS filtering, wake-on-LAN page and multi-WAN dashboard
-before traffic-shaping experiments. Redacted configurations are reference material, not directly
-restorable configuration files.
+## 归档内容
+
+- [刷机与多 WAN 实施方案](CR8809_刷机与无线多WAN实施方案.md)：刷机背景、设备检查记录、来源和实施边界。
+- [原厂设备分区备份](firmware/original-device/README.md)：26 个非空 MTD/UBI 镜像，约 190.70 MiB，附分区清单和 SHA-256。
+- `baseline/`：脱敏后的配置检查点和已部署的自定义功能。
+- `performance/`：网络测试脚本与结果。
+
+## 设备和刷机注意事项
+
+原厂系统运行时采集到的只读设备标识为 `qcom,ipq5018-mp02.1`，内核记录为 Xiaomi XiaoQiang Linux 4.4.60。旧方案最初按“CR8809 A”整理；两者存在板型/芯片假设差异，刷写前必须先按实物和分区证据确认具体版本。
+
+归档里的 `.bin` 是逐分区备份，不是可以直接上传到 U-Boot 页面或通过 `sysupgrade` 安装的单一固件包。仓库没有已验证适用于当前板型的一键回原厂镜像或通用写入命令。恢复前须核对硬件版本、目标分区表、文件哈希和对应恢复方法；不要混用 CR880X A/B 版或 Redmi AX3000 的文件。

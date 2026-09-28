@@ -1,8 +1,17 @@
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/baseline/
 !/performance/
+!/CR8809_刷机与无线多WAN实施方案.md
+!/firmware/
+!/firmware/README.md
+!/firmware/original-device/
+!/firmware/original-device/README.md
+!/firmware/original-device/partition-manifest.csv
+!/firmware/original-device/SHA256SUMS.txt
+!/firmware/original-device/*.bin
 /performance/private/
 /performance/downloads/
 __pycache__/
