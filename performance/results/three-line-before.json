@@ -1,0 +1,5 @@
+{
+  "backup": "backups\\before-three-line-20260928-175136",
+  "git_base": "7c2aed9",
+  "policies": "Current ipv4 policies:\nbalanced:\n wwan2 (50%)\n wan (50%)\nwan_only:\n unreachable\nwan_priority:\n wwan2 (25%)\n wan (75%)\nwifi_priority:\n wwan2 (66%)\n wan (33%)\n\nCurrent ipv6 policies:\nbalanced:\n unreachable\nwan_only:\n unreachable\nwan_priority:\n unreachable\nwifi_priority:\n unreachable\n\n"
+}
