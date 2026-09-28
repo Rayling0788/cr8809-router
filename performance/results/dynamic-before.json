@@ -1,0 +1,6 @@
+{
+  "backup": "backups\\before-dynamic-20260928-172313",
+  "routing": "-N mwan3_rules\n-A mwan3_rules -p tcp -m multiport --dports 443 -m mark --mark 0x0/0x3f00 -j mwan3_policy_wan_priority\n-A mwan3_rules -m mark --mark 0x0/0x3f00 -j mwan3_policy_wan_priority\n0:\tfrom all lookup local\n100:\tfrom all to 10.77.88.0/24 lookup main\n111:\tfrom 10.200.20.122 to 10.0.0.0/8 lookup 1\n1001:\tfrom all iif pppoe-wan lookup 1\n1003:\tfrom all iif phy1-sta0 lookup 3\n2001:\tfrom all fwmark 0x100/0x3f00 lookup 1\n2003:\tfrom all fwmark 0x300/0x3f00 lookup 3\n2061:\tfrom all fwmark 0x3d00/0x3f00 blackhole\n2062:\tfrom all fwmark 0x3e00/0x3f00 unreachable\n3001:\tfrom all fwmark 0x100/0x3f00 unreachable\n3003:\tfrom all fwmark 0x300/0x3f00 unreachable\n32766:\tfrom all lookup main\n32767:\tfrom all lookup default\n",
+  "memory": "              total        used        free      shared  buff/cache   available\nMem:         170584      128636       28420         988       13528       10116\nSwap:             0           0           0\n",
+  "git_base": "43ac5e7"
+}
