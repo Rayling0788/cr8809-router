@@ -1,0 +1,306 @@
+{
+  "label": "two-line-after-three",
+  "duration": 35.29048919999991,
+  "streams": [
+    {
+      "bytes": 5767168,
+      "errors": []
+    },
+    {
+      "bytes": 57081856,
+      "errors": []
+    },
+    {
+      "bytes": 82771968,
+      "errors": []
+    },
+    {
+      "bytes": 6717440,
+      "errors": []
+    },
+    {
+      "bytes": 6651904,
+      "errors": []
+    },
+    {
+      "bytes": 4882432,
+      "errors": []
+    },
+    {
+      "bytes": 5898240,
+      "errors": []
+    },
+    {
+      "bytes": 6225920,
+      "errors": []
+    },
+    {
+      "bytes": 8257536,
+      "errors": []
+    },
+    {
+      "bytes": 8060928,
+      "errors": []
+    },
+    {
+      "bytes": 5931008,
+      "errors": []
+    },
+    {
+      "bytes": 7569408,
+      "errors": []
+    },
+    {
+      "bytes": 6324224,
+      "errors": []
+    },
+    {
+      "bytes": 79790080,
+      "errors": []
+    },
+    {
+      "bytes": 6356992,
+      "errors": []
+    },
+    {
+      "bytes": 5832704,
+      "errors": [
+        "<urlopen error timed out>"
+      ]
+    },
+    {
+      "bytes": 9437184,
+      "errors": []
+    },
+    {
+      "bytes": 6619136,
+      "errors": []
+    },
+    {
+      "bytes": 6422528,
+      "errors": []
+    },
+    {
+      "bytes": 1572864,
+      "errors": []
+    },
+    {
+      "bytes": 7405568,
+      "errors": []
+    },
+    {
+      "bytes": 7340032,
+      "errors": []
+    },
+    {
+      "bytes": 5210112,
+      "errors": []
+    },
+    {
+      "bytes": 50561024,
+      "errors": []
+    },
+    {
+      "bytes": 6520832,
+      "errors": []
+    },
+    {
+      "bytes": 6520832,
+      "errors": []
+    },
+    {
+      "bytes": 7438336,
+      "errors": []
+    },
+    {
+      "bytes": 7307264,
+      "errors": []
+    },
+    {
+      "bytes": 7372800,
+      "errors": []
+    },
+    {
+      "bytes": 6684672,
+      "errors": []
+    },
+    {
+      "bytes": 5931008,
+      "errors": []
+    },
+    {
+      "bytes": 4849664,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "119.84.242.133",
+    "a9ab157193b907cf278c8b01030d0449.dlied1.cdntips.net": "183.61.169.217",
+    "a0ff194589a65e2092525299a4d0985d.dlied1.cdntips.net": "116.31.98.11",
+    "b4372d7e1806342ae52883b1d0e8a891.dlied1.cdntips.net": "121.12.169.241",
+    "b79e22f148d980efc27dca2c211fd49e.dlied1.cdntips.net": "116.31.98.21",
+    "daf12da6b1a7a2328dc4649d90acfff6.dlied1.cdntips.net": "116.31.98.41",
+    "e968a698c4646f9735740a0e815f1029.dlied1.cdntips.net": "116.31.98.42",
+    "f3964e708e230fa347ee6d95420a0a29.dlied1.cdntips.net": "116.31.98.26",
+    "db2bd45bf97f2d1c9a45f5faaf2a9f56.dlied1.cdntips.net": "116.31.98.28",
+    "be60612254e7003b45ce50479e5a7bb4.dlied1.cdntips.net": "113.105.162.13",
+    "314f8ef948d7196cd65a5bb07608d351.dlied1.cdntips.net": "116.31.98.32",
+    "860321dea9fddba7252fbbe11a1fc8b1.dlied1.cdntips.net": "113.105.162.56",
+    "ee811b9ef9d3a2f1d6c3d4bde6727f82.dlied1.cdntips.net": "125.88.187.234",
+    "d8e725165697475a659c89c1cb3af15b.dlied1.cdntips.net": "183.60.163.69",
+    "db1f467ddefc0cd02d1e5bd960f4cce9.dlied1.cdntips.net": "116.31.98.19",
+    "aea7cdf192dcf80cb231b83f08ccaced.dlied1.cdntips.net": "183.60.147.35",
+    "b25c502d17a02a53a9fb8702ea87ea4b.dlied1.cdntips.net": "183.61.169.85",
+    "be29605856d3f7039a638a7ab8d1fe43.dlied1.cdntips.net": "218.16.120.211",
+    "5d9bf02afe4658cdf504721badb516b8.dlied1.cdntips.net": "218.16.120.102",
+    "8d5a4061a46e868bf0717ed924e53f5d.dlied1.cdntips.net": "218.16.120.214"
+  },
+  "mbps": 102.30828174521336,
+  "throughput_samples": [
+    {
+      "time": 1799.3112885,
+      "bytes": 0
+    },
+    {
+      "time": 1800.3414801,
+      "bytes": 0
+    },
+    {
+      "time": 1801.3564638,
+      "bytes": 10715136
+    },
+    {
+      "time": 1802.3624072,
+      "bytes": 24084480
+    },
+    {
+      "time": 1803.3665103,
+      "bytes": 36110336
+    },
+    {
+      "time": 1804.3714961,
+      "bytes": 50954240
+    },
+    {
+      "time": 1805.3749452,
+      "bytes": 64192512
+    },
+    {
+      "time": 1806.375283,
+      "bytes": 75792384
+    },
+    {
+      "time": 1807.3794434,
+      "bytes": 87818240
+    },
+    {
+      "time": 1808.3841924,
+      "bytes": 102662144
+    },
+    {
+      "time": 1809.388463,
+      "bytes": 115703808
+    },
+    {
+      "time": 1810.3910277,
+      "bytes": 134053888
+    },
+    {
+      "time": 1811.3934327,
+      "bytes": 146702336
+    },
+    {
+      "time": 1812.3962537,
+      "bytes": 163676160
+    },
+    {
+      "time": 1813.3997384,
+      "bytes": 173539328
+    },
+    {
+      "time": 1814.4023488,
+      "bytes": 186548224
+    },
+    {
+      "time": 1815.4051336,
+      "bytes": 199000064
+    },
+    {
+      "time": 1816.4200278,
+      "bytes": 212729856
+    },
+    {
+      "time": 1817.4230545,
+      "bytes": 227409920
+    },
+    {
+      "time": 1818.4259168,
+      "bytes": 242647040
+    },
+    {
+      "time": 1819.427031,
+      "bytes": 258342912
+    },
+    {
+      "time": 1820.4311631,
+      "bytes": 272891904
+    },
+    {
+      "time": 1821.434765,
+      "bytes": 287539200
+    },
+    {
+      "time": 1822.4376987,
+      "bytes": 300482560
+    },
+    {
+      "time": 1823.4396801,
+      "bytes": 314114048
+    },
+    {
+      "time": 1824.4433491,
+      "bytes": 326828032
+    },
+    {
+      "time": 1825.4477086,
+      "bytes": 342294528
+    },
+    {
+      "time": 1826.4524602,
+      "bytes": 356417536
+    },
+    {
+      "time": 1827.4580319,
+      "bytes": 370343936
+    },
+    {
+      "time": 1828.463964,
+      "bytes": 385024000
+    },
+    {
+      "time": 1829.4694494,
+      "bytes": 398557184
+    },
+    {
+      "time": 1830.4775351,
+      "bytes": 410845184
+    },
+    {
+      "time": 1831.4861926,
+      "bytes": 418021376
+    },
+    {
+      "time": 1832.4874372,
+      "bytes": 430964736
+    },
+    {
+      "time": 1833.4922958,
+      "bytes": 442433536
+    },
+    {
+      "time": 1834.49688,
+      "bytes": 451248128
+    }
+  ],
+  "peak_5s_mbps": 120.96597712693847
+}

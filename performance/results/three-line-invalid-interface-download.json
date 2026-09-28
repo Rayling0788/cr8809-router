@@ -1,0 +1,275 @@
+{
+  "label": "three-line-balanced",
+  "duration": 1.5637951000001067,
+  "streams": [
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    },
+    {
+      "bytes": 0,
+      "errors": [
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>",
+        "<urlopen error [WinError 10022] \u63d0\u4f9b\u4e86\u4e00\u4e2a\u65e0\u6548\u7684\u53c2\u6570\u3002>"
+      ]
+    }
+  ],
+  "dns": {},
+  "mbps": 0.0,
+  "throughput_samples": [
+    {
+      "time": 1285.9178573,
+      "bytes": 0
+    },
+    {
+      "time": 1286.9250434,
+      "bytes": 0
+    }
+  ],
+  "peak_5s_mbps": 0
+}

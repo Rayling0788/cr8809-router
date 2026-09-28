@@ -2,6 +2,7 @@
 import concurrent.futures, http.client, json, pathlib, socket, ssl, struct, subprocess, sys, time, urllib.parse, urllib.request, threading, random
 LABEL=sys.argv[1]; DURATION=int(sys.argv[2]); RATE=float(sys.argv[3]) if len(sys.argv)>3 else 0
 STREAMS=int(sys.argv[4]) if len(sys.argv)>4 else 4
+IFINDEX=int(subprocess.check_output(['powershell.exe','-NoProfile','-Command',"(Get-NetIPAddress -AddressFamily IPv4 -IPAddress '192.168.1.212' -ErrorAction Stop).InterfaceIndex"],text=True).strip())
 END=time.monotonic()+DURATION; START=time.monotonic(); cache={}; lock=threading.Lock()
 counts=[0]*STREAMS; throughput_samples=[{'time':START,'bytes':0}]; finished=threading.Event()
 def monitor():
@@ -25,7 +26,7 @@ def resolve(host):
         raise RuntimeError('No IPv4 answer for '+host)
 class DirectHTTPS(http.client.HTTPSConnection):
     def connect(self):
-        s=socket.socket();s.settimeout(5);s.setsockopt(socket.IPPROTO_IP,31,socket.htonl(13))
+        s=socket.socket();s.settimeout(5);s.setsockopt(socket.IPPROTO_IP,31,socket.htonl(IFINDEX))
         for _ in range(20):
             try:s.bind(('192.168.1.212',random.randrange(45000,46000)));break
             except OSError:continue
@@ -60,3 +61,4 @@ out['peak_5s_mbps']=max(((b['bytes']-a['bytes'])*8/(b['time']-a['time'])/1e6 for
 pathlib.Path('performance/results').mkdir(parents=True,exist_ok=True)
 pathlib.Path('performance/results',LABEL+'-download.json').write_text(json.dumps(out,indent=2))
 print(json.dumps(out,indent=2))
+if not sum(r['bytes'] for r in results):sys.exit(2)

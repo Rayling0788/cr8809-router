@@ -1,0 +1,311 @@
+{
+  "label": "three-line-wired-priority-retry",
+  "duration": 35.249694999999974,
+  "streams": [
+    {
+      "bytes": 8323072,
+      "errors": []
+    },
+    {
+      "bytes": 8847360,
+      "errors": []
+    },
+    {
+      "bytes": 21266432,
+      "errors": []
+    },
+    {
+      "bytes": 4325376,
+      "errors": []
+    },
+    {
+      "bytes": 10813440,
+      "errors": []
+    },
+    {
+      "bytes": 8945664,
+      "errors": []
+    },
+    {
+      "bytes": 24412160,
+      "errors": []
+    },
+    {
+      "bytes": 9076736,
+      "errors": []
+    },
+    {
+      "bytes": 21463040,
+      "errors": []
+    },
+    {
+      "bytes": 9371648,
+      "errors": []
+    },
+    {
+      "bytes": 22478848,
+      "errors": []
+    },
+    {
+      "bytes": 21790720,
+      "errors": []
+    },
+    {
+      "bytes": 9863168,
+      "errors": []
+    },
+    {
+      "bytes": 21561344,
+      "errors": []
+    },
+    {
+      "bytes": 8978432,
+      "errors": []
+    },
+    {
+      "bytes": 23068672,
+      "errors": []
+    },
+    {
+      "bytes": 10321920,
+      "errors": []
+    },
+    {
+      "bytes": 22544384,
+      "errors": []
+    },
+    {
+      "bytes": 9338880,
+      "errors": []
+    },
+    {
+      "bytes": 9961472,
+      "errors": []
+    },
+    {
+      "bytes": 10027008,
+      "errors": []
+    },
+    {
+      "bytes": 9469952,
+      "errors": []
+    },
+    {
+      "bytes": 8716288,
+      "errors": []
+    },
+    {
+      "bytes": 8650752,
+      "errors": []
+    },
+    {
+      "bytes": 20971520,
+      "errors": []
+    },
+    {
+      "bytes": 21168128,
+      "errors": []
+    },
+    {
+      "bytes": 9043968,
+      "errors": []
+    },
+    {
+      "bytes": 7962624,
+      "errors": []
+    },
+    {
+      "bytes": 8355840,
+      "errors": []
+    },
+    {
+      "bytes": 21331968,
+      "errors": []
+    },
+    {
+      "bytes": 22249472,
+      "errors": []
+    },
+    {
+      "bytes": 8126464,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "171.108.209.190",
+    "27ac45ea4fa8ed858a4470a5da779546.dlied1.cdntips.net": "116.31.98.20",
+    "e47dc4c30e3860df87b4d3f036474bca.dlied1.cdntips.net": "218.16.120.84",
+    "70e96f21a67a22494a735bbf46b18bae.dlied1.cdntips.net": "116.31.99.114",
+    "417e52dd4cfbda89dc00c01c00a93578.dlied1.cdntips.net": "116.31.99.168",
+    "d68b2185a433baf64433a4598b649dab.dlied1.cdntips.net": "121.12.169.12",
+    "6cfc39f3b7dd86b245dadc6dc3c1646c.dlied1.cdntips.net": "183.61.179.47",
+    "e43ab366ad004c24283eb1974c39ae0f.dlied1.cdntips.net": "116.31.98.14",
+    "d475551a02ee3a818b0eed26d76d78a4.dlied1.cdntips.net": "183.61.188.21",
+    "bf063938944aad61298f58b114c1fcf5.dlied1.cdntips.net": "113.105.162.150",
+    "860321dea9fddba7252fbbe11a1fc8b1.dlied1.cdntips.net": "113.105.162.56",
+    "c9f0855da7b325a01c5f40f511f0068c.dlied1.cdntips.net": "116.31.98.22",
+    "a28ba9cd72ee5e64aeea34c11a5830c5.dlied1.cdntips.net": "113.105.162.81",
+    "bc9014622adfec430fe54e30f2b6c0f1.dlied1.cdntips.net": "125.88.145.59",
+    "29dcc41e87ca7c64d10f8685d414e7c6.dlied1.cdntips.net": "183.61.179.36",
+    "be29605856d3f7039a638a7ab8d1fe43.dlied1.cdntips.net": "218.16.120.211",
+    "8c9f3895b3be1558f41a668e349bf2f3.dlied1.cdntips.net": "125.88.186.134",
+    "8d5a4061a46e868bf0717ed924e53f5d.dlied1.cdntips.net": "218.16.120.214",
+    "e968a698c4646f9735740a0e815f1029.dlied1.cdntips.net": "116.31.98.42",
+    "a0ff194589a65e2092525299a4d0985d.dlied1.cdntips.net": "116.31.98.11",
+    "111440ed4af892988be4021a2fe4ca8c.dlied1.cdntips.net": "121.12.126.219",
+    "b79e22f148d980efc27dca2c211fd49e.dlied1.cdntips.net": "116.31.98.21",
+    "be60612254e7003b45ce50479e5a7bb4.dlied1.cdntips.net": "113.105.162.13",
+    "25541bbab6493d6c65ca866dd578b083.dlied1.cdntips.net": "116.31.98.39",
+    "d76b948809c4652ef69ad806f956e861.dlied1.cdntips.net": "183.61.179.59",
+    "b4372d7e1806342ae52883b1d0e8a891.dlied1.cdntips.net": "121.12.169.241",
+    "20cc0f4dc7e18543f9d241dcd532198f.dlied1.cdntips.net": "121.12.126.22"
+  },
+  "mbps": 100.50055797645916,
+  "throughput_samples": [
+    {
+      "time": 1724.7180246,
+      "bytes": 0
+    },
+    {
+      "time": 1725.7960417,
+      "bytes": 0
+    },
+    {
+      "time": 1726.8097658,
+      "bytes": 8519680
+    },
+    {
+      "time": 1727.8151,
+      "bytes": 22740992
+    },
+    {
+      "time": 1728.8184063,
+      "bytes": 35586048
+    },
+    {
+      "time": 1729.8232314,
+      "bytes": 49217536
+    },
+    {
+      "time": 1730.8272252,
+      "bytes": 63143936
+    },
+    {
+      "time": 1731.8302809,
+      "bytes": 76939264
+    },
+    {
+      "time": 1732.833863,
+      "bytes": 90603520
+    },
+    {
+      "time": 1733.8354583,
+      "bytes": 104071168
+    },
+    {
+      "time": 1734.8398887,
+      "bytes": 117211136
+    },
+    {
+      "time": 1735.8446301,
+      "bytes": 130580480
+    },
+    {
+      "time": 1736.8488858,
+      "bytes": 144048128
+    },
+    {
+      "time": 1737.8524493,
+      "bytes": 157810688
+    },
+    {
+      "time": 1738.857566,
+      "bytes": 169607168
+    },
+    {
+      "time": 1739.8619094,
+      "bytes": 181043200
+    },
+    {
+      "time": 1740.8680693,
+      "bytes": 192839680
+    },
+    {
+      "time": 1741.8702008,
+      "bytes": 204079104
+    },
+    {
+      "time": 1742.8725982,
+      "bytes": 217481216
+    },
+    {
+      "time": 1743.8801709,
+      "bytes": 230293504
+    },
+    {
+      "time": 1744.8816805,
+      "bytes": 246841344
+    },
+    {
+      "time": 1745.8847761,
+      "bytes": 258703360
+    },
+    {
+      "time": 1746.8892075,
+      "bytes": 273252352
+    },
+    {
+      "time": 1747.8935082,
+      "bytes": 287244288
+    },
+    {
+      "time": 1748.897007,
+      "bytes": 299597824
+    },
+    {
+      "time": 1749.9033632,
+      "bytes": 313098240
+    },
+    {
+      "time": 1750.9066464,
+      "bytes": 325844992
+    },
+    {
+      "time": 1751.9116753,
+      "bytes": 338427904
+    },
+    {
+      "time": 1752.9147704,
+      "bytes": 351436800
+    },
+    {
+      "time": 1753.9157715,
+      "bytes": 364478464
+    },
+    {
+      "time": 1754.919781,
+      "bytes": 380076032
+    },
+    {
+      "time": 1755.9232696,
+      "bytes": 391905280
+    },
+    {
+      "time": 1756.9262302,
+      "bytes": 404455424
+    },
+    {
+      "time": 1757.9298847,
+      "bytes": 417300480
+    },
+    {
+      "time": 1758.9325622,
+      "bytes": 430276608
+    },
+    {
+      "time": 1759.9338214,
+      "bytes": 442793984
+    }
+  ],
+  "peak_5s_mbps": 111.15606055476091
+}

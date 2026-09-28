@@ -1,0 +1,261 @@
+{
+  "label": "three-line-wired-priority-retry",
+  "devices": [
+    "pppoe-wan",
+    "phy1-sta0",
+    "phy0-sta0"
+  ],
+  "latency": {
+    "pppoe-wan": {
+      "raw": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=50 time=20.878 ms\n64 bytes from 8.163.113.0: seq=1 ttl=50 time=20.904 ms\n64 bytes from 8.163.113.0: seq=2 ttl=50 time=21.335 ms\n64 bytes from 8.163.113.0: seq=3 ttl=50 time=20.594 ms\n64 bytes from 8.163.113.0: seq=4 ttl=50 time=28.010 ms\n64 bytes from 8.163.113.0: seq=6 ttl=50 time=24.611 ms\n64 bytes from 8.163.113.0: seq=7 ttl=50 time=30.344 ms\n64 bytes from 8.163.113.0: seq=9 ttl=50 time=30.210 ms\n64 bytes from 8.163.113.0: seq=10 ttl=50 time=78.446 ms\n64 bytes from 8.163.113.0: seq=11 ttl=50 time=28.600 ms\n64 bytes from 8.163.113.0: seq=12 ttl=50 time=29.025 ms\n64 bytes from 8.163.113.0: seq=13 ttl=50 time=24.946 ms\n64 bytes from 8.163.113.0: seq=15 ttl=50 time=25.613 ms\n64 bytes from 8.163.113.0: seq=16 ttl=50 time=24.587 ms\n64 bytes from 8.163.113.0: seq=17 ttl=50 time=31.195 ms\n64 bytes from 8.163.113.0: seq=18 ttl=50 time=26.604 ms\n64 bytes from 8.163.113.0: seq=19 ttl=50 time=26.872 ms\n64 bytes from 8.163.113.0: seq=20 ttl=50 time=21.073 ms\n64 bytes from 8.163.113.0: seq=21 ttl=50 time=25.013 ms\n64 bytes from 8.163.113.0: seq=22 ttl=50 time=34.925 ms\n64 bytes from 8.163.113.0: seq=23 ttl=50 time=28.731 ms\n64 bytes from 8.163.113.0: seq=24 ttl=50 time=26.698 ms\n64 bytes from 8.163.113.0: seq=25 ttl=50 time=28.434 ms\n64 bytes from 8.163.113.0: seq=26 ttl=50 time=28.037 ms\n64 bytes from 8.163.113.0: seq=27 ttl=50 time=27.525 ms\n64 bytes from 8.163.113.0: seq=28 ttl=50 time=24.019 ms\n64 bytes from 8.163.113.0: seq=29 ttl=50 time=27.674 ms\n64 bytes from 8.163.113.0: seq=31 ttl=50 time=29.227 ms\n64 bytes from 8.163.113.0: seq=32 ttl=50 time=29.276 ms\n64 bytes from 8.163.113.0: seq=33 ttl=50 time=32.585 ms\n64 bytes from 8.163.113.0: seq=34 ttl=50 time=27.020 ms\n64 bytes from 8.163.113.0: seq=36 ttl=50 time=26.007 ms\n64 bytes from 8.163.113.0: seq=37 ttl=50 time=20.174 ms\n64 bytes from 8.163.113.0: seq=38 ttl=50 time=20.624 ms\n64 bytes from 8.163.113.0: seq=39 ttl=50 time=20.456 ms\n\n--- 8.163.113.0 ping statistics ---\n40 packets transmitted, 35 packets received, 12% packet loss\nround-trip min/avg/max = 20.174/27.722/78.446 ms\n",
+      "received": 35,
+      "sent": 40,
+      "mean_ms": 27.72,
+      "p95_ms": 34.925,
+      "max_ms": 78.446
+    },
+    "phy1-sta0": {
+      "raw": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=49 time=19.283 ms\n64 bytes from 8.163.113.0: seq=1 ttl=49 time=18.893 ms\n64 bytes from 8.163.113.0: seq=2 ttl=49 time=19.273 ms\n64 bytes from 8.163.113.0: seq=3 ttl=49 time=19.086 ms\n64 bytes from 8.163.113.0: seq=4 ttl=49 time=19.438 ms\n64 bytes from 8.163.113.0: seq=5 ttl=49 time=20.097 ms\n64 bytes from 8.163.113.0: seq=6 ttl=49 time=21.727 ms\n64 bytes from 8.163.113.0: seq=7 ttl=49 time=19.969 ms\n64 bytes from 8.163.113.0: seq=8 ttl=49 time=19.938 ms\n64 bytes from 8.163.113.0: seq=9 ttl=49 time=29.128 ms\n64 bytes from 8.163.113.0: seq=10 ttl=49 time=20.969 ms\n64 bytes from 8.163.113.0: seq=11 ttl=49 time=20.878 ms\n64 bytes from 8.163.113.0: seq=12 ttl=49 time=51.372 ms\n64 bytes from 8.163.113.0: seq=13 ttl=49 time=20.770 ms\n64 bytes from 8.163.113.0: seq=14 ttl=49 time=20.625 ms\n64 bytes from 8.163.113.0: seq=15 ttl=49 time=20.682 ms\n64 bytes from 8.163.113.0: seq=16 ttl=49 time=18.771 ms\n64 bytes from 8.163.113.0: seq=17 ttl=49 time=21.874 ms\n64 bytes from 8.163.113.0: seq=18 ttl=49 time=21.223 ms\n64 bytes from 8.163.113.0: seq=19 ttl=49 time=21.868 ms\n64 bytes from 8.163.113.0: seq=20 ttl=49 time=39.141 ms\n64 bytes from 8.163.113.0: seq=21 ttl=49 time=20.865 ms\n64 bytes from 8.163.113.0: seq=22 ttl=49 time=45.214 ms\n64 bytes from 8.163.113.0: seq=23 ttl=49 time=20.061 ms\n64 bytes from 8.163.113.0: seq=24 ttl=49 time=18.593 ms\n64 bytes from 8.163.113.0: seq=25 ttl=49 time=19.641 ms\n64 bytes from 8.163.113.0: seq=26 ttl=49 time=19.626 ms\n64 bytes from 8.163.113.0: seq=27 ttl=49 time=20.932 ms\n64 bytes from 8.163.113.0: seq=28 ttl=49 time=20.731 ms\n64 bytes from 8.163.113.0: seq=29 ttl=49 time=21.586 ms\n64 bytes from 8.163.113.0: seq=30 ttl=49 time=19.088 ms\n64 bytes from 8.163.113.0: seq=31 ttl=49 time=22.128 ms\n64 bytes from 8.163.113.0: seq=32 ttl=49 time=21.453 ms\n64 bytes from 8.163.113.0: seq=33 ttl=49 time=21.300 ms\n64 bytes from 8.163.113.0: seq=34 ttl=49 time=21.260 ms\n64 bytes from 8.163.113.0: seq=35 ttl=49 time=79.997 ms\n64 bytes from 8.163.113.0: seq=36 ttl=49 time=79.090 ms\n64 bytes from 8.163.113.0: seq=37 ttl=49 time=18.907 ms\n64 bytes from 8.163.113.0: seq=38 ttl=49 time=19.340 ms\n64 bytes from 8.163.113.0: seq=39 ttl=49 time=19.378 ms\n\n--- 8.163.113.0 ping statistics ---\n40 packets transmitted, 40 packets received, 0% packet loss\nround-trip min/avg/max = 18.593/25.354/79.997 ms\n",
+      "received": 40,
+      "sent": 40,
+      "mean_ms": 25.35,
+      "p95_ms": 79.09,
+      "max_ms": 79.997
+    },
+    "phy0-sta0": {
+      "raw": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=49 time=23.440 ms\n64 bytes from 8.163.113.0: seq=1 ttl=49 time=23.357 ms\n64 bytes from 8.163.113.0: seq=2 ttl=49 time=25.024 ms\n64 bytes from 8.163.113.0: seq=3 ttl=49 time=26.211 ms\n64 bytes from 8.163.113.0: seq=4 ttl=49 time=22.625 ms\n64 bytes from 8.163.113.0: seq=5 ttl=49 time=56.801 ms\n64 bytes from 8.163.113.0: seq=6 ttl=49 time=58.182 ms\n64 bytes from 8.163.113.0: seq=7 ttl=49 time=80.545 ms\n64 bytes from 8.163.113.0: seq=8 ttl=49 time=54.234 ms\n64 bytes from 8.163.113.0: seq=9 ttl=49 time=24.413 ms\n64 bytes from 8.163.113.0: seq=10 ttl=49 time=28.923 ms\n64 bytes from 8.163.113.0: seq=11 ttl=49 time=26.381 ms\n64 bytes from 8.163.113.0: seq=12 ttl=49 time=44.360 ms\n64 bytes from 8.163.113.0: seq=13 ttl=49 time=24.401 ms\n64 bytes from 8.163.113.0: seq=14 ttl=49 time=37.395 ms\n64 bytes from 8.163.113.0: seq=15 ttl=49 time=33.923 ms\n64 bytes from 8.163.113.0: seq=16 ttl=49 time=74.716 ms\n64 bytes from 8.163.113.0: seq=17 ttl=49 time=24.600 ms\n64 bytes from 8.163.113.0: seq=18 ttl=49 time=21.519 ms\n64 bytes from 8.163.113.0: seq=19 ttl=49 time=53.555 ms\n64 bytes from 8.163.113.0: seq=20 ttl=49 time=197.989 ms\n64 bytes from 8.163.113.0: seq=21 ttl=49 time=64.845 ms\n64 bytes from 8.163.113.0: seq=22 ttl=49 time=141.725 ms\n64 bytes from 8.163.113.0: seq=23 ttl=49 time=110.002 ms\n64 bytes from 8.163.113.0: seq=24 ttl=49 time=74.110 ms\n64 bytes from 8.163.113.0: seq=25 ttl=49 time=208.754 ms\n64 bytes from 8.163.113.0: seq=26 ttl=49 time=32.653 ms\n64 bytes from 8.163.113.0: seq=27 ttl=49 time=24.029 ms\n64 bytes from 8.163.113.0: seq=28 ttl=49 time=27.938 ms\n64 bytes from 8.163.113.0: seq=29 ttl=49 time=26.624 ms\n64 bytes from 8.163.113.0: seq=30 ttl=49 time=53.676 ms\n64 bytes from 8.163.113.0: seq=31 ttl=49 time=50.425 ms\n64 bytes from 8.163.113.0: seq=32 ttl=49 time=48.933 ms\n64 bytes from 8.163.113.0: seq=33 ttl=49 time=29.794 ms\n64 bytes from 8.163.113.0: seq=34 ttl=49 time=38.116 ms\n64 bytes from 8.163.113.0: seq=35 ttl=49 time=25.979 ms\n64 bytes from 8.163.113.0: seq=36 ttl=49 time=104.953 ms\n64 bytes from 8.163.113.0: seq=37 ttl=49 time=24.883 ms\n64 bytes from 8.163.113.0: seq=38 ttl=49 time=23.627 ms\n64 bytes from 8.163.113.0: seq=39 ttl=49 time=65.238 ms\n\n--- 8.163.113.0 ping statistics ---\n40 packets transmitted, 40 packets received, 0% packet loss\nround-trip min/avg/max = 21.519/53.472/208.754 ms\n",
+      "received": 40,
+      "sent": 40,
+      "mean_ms": 53.47,
+      "p95_ms": 197.989,
+      "max_ms": 208.754
+    }
+  },
+  "intervals": [
+    {
+      "cpu_total_core0_core1": [
+        65.79,
+        93.19,
+        38.73
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        53.077,
+        2.141,
+        42.736,
+        2.531
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 53.077,
+          "tx": 2.141
+        },
+        "phy1-sta0": {
+          "rx": 42.736,
+          "tx": 2.531
+        },
+        "phy0-sta0": {
+          "rx": 12.737,
+          "tx": 0.62
+        }
+      },
+      "available_kib": 15248
+    },
+    {
+      "cpu_total_core0_core1": [
+        52.4,
+        100.0,
+        4.72
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        65.135,
+        2.631,
+        52.485,
+        2.584
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 65.135,
+          "tx": 2.631
+        },
+        "phy1-sta0": {
+          "rx": 52.485,
+          "tx": 2.584
+        },
+        "phy0-sta0": {
+          "rx": 37.363,
+          "tx": 2.211
+        }
+      },
+      "available_kib": 15360
+    },
+    {
+      "cpu_total_core0_core1": [
+        55.41,
+        100.0,
+        9.76
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        63.765,
+        2.487,
+        46.719,
+        2.491
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 63.765,
+          "tx": 2.487
+        },
+        "phy1-sta0": {
+          "rx": 46.719,
+          "tx": 2.491
+        },
+        "phy0-sta0": {
+          "rx": 34.742,
+          "tx": 1.977
+        }
+      },
+      "available_kib": 20368
+    },
+    {
+      "cpu_total_core0_core1": [
+        66.31,
+        100.0,
+        32.01
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        62.348,
+        2.547,
+        50.194,
+        2.574
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 62.348,
+          "tx": 2.547
+        },
+        "phy1-sta0": {
+          "rx": 50.194,
+          "tx": 2.574
+        },
+        "phy0-sta0": {
+          "rx": 29.36,
+          "tx": 1.589
+        }
+      },
+      "available_kib": 17504
+    },
+    {
+      "cpu_total_core0_core1": [
+        52.8,
+        99.81,
+        5.14
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        65.037,
+        2.74,
+        55.168,
+        3.029
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 65.037,
+          "tx": 2.74
+        },
+        "phy1-sta0": {
+          "rx": 55.168,
+          "tx": 3.029
+        },
+        "phy0-sta0": {
+          "rx": 35.477,
+          "tx": 1.94
+        }
+      },
+      "available_kib": 14724
+    },
+    {
+      "cpu_total_core0_core1": [
+        52.76,
+        100.0,
+        5.34
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        67.589,
+        3.185,
+        49.14,
+        2.869
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 67.589,
+          "tx": 3.185
+        },
+        "phy1-sta0": {
+          "rx": 49.14,
+          "tx": 2.869
+        },
+        "phy0-sta0": {
+          "rx": 32.264,
+          "tx": 1.885
+        }
+      },
+      "available_kib": 17068
+    },
+    {
+      "cpu_total_core0_core1": [
+        53.5,
+        100.0,
+        6.53
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        63.651,
+        3.15,
+        50.501,
+        3.089
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 63.651,
+          "tx": 3.15
+        },
+        "phy1-sta0": {
+          "rx": 50.501,
+          "tx": 3.089
+        },
+        "phy0-sta0": {
+          "rx": 35.965,
+          "tx": 2.032
+        }
+      },
+      "available_kib": 18456
+    },
+    {
+      "cpu_total_core0_core1": [
+        33.3,
+        62.4,
+        5.31
+      ],
+      "mbps_wan_rx_tx_wifi_rx_tx": [
+        42.631,
+        1.522,
+        31.849,
+        1.354
+      ],
+      "mbps_by_device": {
+        "pppoe-wan": {
+          "rx": 42.631,
+          "tx": 1.522
+        },
+        "phy1-sta0": {
+          "rx": 31.849,
+          "tx": 1.354
+        },
+        "phy0-sta0": {
+          "rx": 5.414,
+          "tx": 0.294
+        }
+      },
+      "available_kib": 17416
+    }
+  ],
+  "qdiscs": "qdisc noqueue 0: dev lo root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc fq_codel 0: dev eth1 root refcnt 2 limit 10240p flows 1024 quantum 1516 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 \n Sent 142494268454 bytes 142066564 pkt (dropped 242006, overlimits 0 requeues 161416) \n backlog 0b 0p requeues 161416\n  maxpacket 1516 drop_overlimit 71912 new_flow_count 1256898 ecn_mark 0 drop_overmemory 71912\n  new_flows_len 0 old_flows_len 0\nqdisc noqueue 0: dev lan1 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev lan2 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev lan3 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev wan root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev br-lan root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy1-ap0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy1-sta0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev wgdorm root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc fq_codel 0: dev pppoe-wan root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 \n Sent 69790961 bytes 1012066 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\n  maxpacket 84 drop_overlimit 0 new_flow_count 30 ecn_mark 0\n  new_flows_len 0 old_flows_len 0\nqdisc noqueue 0: dev phy0-ap0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\nqdisc noqueue 0: dev phy0-sta0 root refcnt 2 \n Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) \n backlog 0b 0p requeues 0\n642\n"
+}

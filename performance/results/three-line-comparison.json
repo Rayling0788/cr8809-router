@@ -1,0 +1,40 @@
+{
+  "three-line-balanced-retry": {
+    "download_mean_MBps": 12.825923271462893,
+    "download_peak_5s_MBps": 14.630170015030982,
+    "network_peak_5s_MBps": 18.991500000000002,
+    "line_mean_Mbps": {
+      "pppoe-wan": 51.582625,
+      "phy1-sta0": 49.85125,
+      "phy0-sta0": 34.374375
+    },
+    "core0_mean": 95.885,
+    "valid_intervals": 8,
+    "errors": 1
+  },
+  "three-line-wired-priority-retry": {
+    "download_mean_MBps": 12.562569747057395,
+    "download_peak_5s_MBps": 13.894507569345114,
+    "network_peak_5s_MBps": 19.460250000000002,
+    "line_mean_Mbps": {
+      "pppoe-wan": 60.404125,
+      "phy1-sta0": 47.349,
+      "phy0-sta0": 27.91525
+    },
+    "core0_mean": 94.425,
+    "valid_intervals": 8,
+    "errors": 0
+  },
+  "two-line-after-three": {
+    "download_mean_MBps": 12.78853521815167,
+    "download_peak_5s_MBps": 15.120747140867309,
+    "network_peak_5s_MBps": 25.398125,
+    "line_mean_Mbps": {
+      "pppoe-wan": 66.198,
+      "phy1-sta0": 95.34725
+    },
+    "core0_mean": 91.81,
+    "valid_intervals": 8,
+    "errors": 1
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "network_restored": true,
+  "firewall_restored": true,
+  "mwan3_restored": true,
+  "dhcp_restored": true,
+  "uhttpd_restored": true,
+  "wireless_restored": true,
+  "campus_restored": true,
+  "wan": {
+    "up": true,
+    "pending": false,
+    "available": true,
+    "autostart": true,
+    "dynamic": false,
+    "uptime": 462,
+    "l3_device": "pppoe-wan",
+    "proto": "pppoe",
+    "device": "wan",
+    "updated": [
+      "addresses"
+    ],
+    "metric": 10,
+    "dns_metric": 0,
+    "delegation": true,
+    "ipv4-address": [
+      {
+        "address": "10.200.19.63",
+        "mask": 32,
+        "ptpaddress": "10.200.16.0"
+      }
+    ],
+    "ipv6-address": [
+      {
+        "address": "fe80::183e:664d:90c4:b51a",
+        "mask": 128
+      }
+    ],
+    "ipv6-prefix": [],
+    "ipv6-prefix-assignment": [],
+    "route": [
+      {
+        "target": "0.0.0.0",
+        "mask": 0,
+        "nexthop": "10.200.16.0",
+        "source": "0.0.0.0/0"
+      }
+    ],
+    "dns-server": [
+      "222.200.115.251",
+      "222.200.115.252"
+    ],
+    "dns-search": [],
+    "neighbors": [],
+    "inactive": {
+      "ipv4-address": [],
+      "ipv6-address": [],
+      "route": [],
+      "dns-server": [],
+      "dns-search": [],
+      "neighbors": []
+    },
+    "data": {}
+  },
+  "return_rule": "111:\tfrom 10.200.19.63 to 10.0.0.0/8 lookup 1\n",
+  "wake": "{\n\t\"online\": true\n}\n",
+  "policies": "Current ipv4 policies:\nbalanced:\n wwan2 (50%)\n wan (50%)\nwan_only:\n unreachable\nwan_priority:\n wwan2 (25%)\n wan (75%)\nwifi_priority:\n wwan2 (66%)\n wan (33%)\n\nCurrent ipv6 policies:\nbalanced:\n unreachable\nwan_only:\n unreachable\nwan_priority:\n unreachable\nwifi_priority:\n unreachable\n\n",
+  "adblock": "Server:\t\t127.0.0.1\nAddress:\t127.0.0.1:53\n\nName:\tad.doubleclick.net\nAddress: 0.0.0.0\n\nName:\tad.doubleclick.net\nAddress: ::\n\n",
+  "sqm": "",
+  "vpn_ping": "PING 10.77.88.2 (10.77.88.2) 56(84) bytes of data.\n64 bytes from 10.77.88.2: icmp_seq=1 ttl=64 time=24.5 ms\n64 bytes from 10.77.88.2: icmp_seq=2 ttl=64 time=30.9 ms\n\n--- 10.77.88.2 ping statistics ---\n2 packets transmitted, 2 received, 0% packet loss, time 1001ms\nrtt min/avg/max/mdev = 24.503/27.681/30.860/3.178 ms\n"
+}

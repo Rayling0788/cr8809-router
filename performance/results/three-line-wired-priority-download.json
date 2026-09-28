@@ -1,0 +1,327 @@
+{
+  "label": "three-line-wired-priority",
+  "duration": 35.408713499999976,
+  "streams": [
+    {
+      "bytes": 6586368,
+      "errors": []
+    },
+    {
+      "bytes": 33914880,
+      "errors": []
+    },
+    {
+      "bytes": 17334272,
+      "errors": []
+    },
+    {
+      "bytes": 4685824,
+      "errors": []
+    },
+    {
+      "bytes": 17137664,
+      "errors": [
+        "<urlopen error timed out>"
+      ]
+    },
+    {
+      "bytes": 5013504,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "bytes": 30703616,
+      "errors": []
+    },
+    {
+      "bytes": 5799936,
+      "errors": []
+    },
+    {
+      "bytes": 2457600,
+      "errors": []
+    },
+    {
+      "bytes": 16875520,
+      "errors": []
+    },
+    {
+      "bytes": 5832704,
+      "errors": []
+    },
+    {
+      "bytes": 6127616,
+      "errors": []
+    },
+    {
+      "bytes": 17432576,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "bytes": 7241728,
+      "errors": []
+    },
+    {
+      "bytes": 17825792,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "bytes": 15892480,
+      "errors": []
+    },
+    {
+      "bytes": 19890176,
+      "errors": []
+    },
+    {
+      "bytes": 15368192,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "bytes": 16351232,
+      "errors": []
+    },
+    {
+      "bytes": 15695872,
+      "errors": []
+    },
+    {
+      "bytes": 7405568,
+      "errors": []
+    },
+    {
+      "bytes": 16646144,
+      "errors": []
+    },
+    {
+      "bytes": 6324224,
+      "errors": []
+    },
+    {
+      "bytes": 8749056,
+      "errors": []
+    },
+    {
+      "bytes": 6062080,
+      "errors": []
+    },
+    {
+      "bytes": 18939904,
+      "errors": []
+    },
+    {
+      "bytes": 5308416,
+      "errors": [
+        "The read operation timed out"
+      ]
+    },
+    {
+      "bytes": 6029312,
+      "errors": [
+        "<urlopen error timed out>"
+      ]
+    },
+    {
+      "bytes": 18120704,
+      "errors": []
+    },
+    {
+      "bytes": 16056320,
+      "errors": []
+    },
+    {
+      "bytes": 19005440,
+      "errors": []
+    },
+    {
+      "bytes": 5963776,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "119.84.242.133",
+    "1ef08ced2d91f8b0fcd5080ea9f7cf3b.dlied1.cdntips.net": "113.105.142.155",
+    "a28ba9cd72ee5e64aeea34c11a5830c5.dlied1.cdntips.net": "113.105.162.81",
+    "c2a19ddd3a728aebb53149307b59bf10.dlied1.cdntips.net": "183.60.169.18",
+    "d68b2185a433baf64433a4598b649dab.dlied1.cdntips.net": "121.12.169.12",
+    "e43ab366ad004c24283eb1974c39ae0f.dlied1.cdntips.net": "116.31.98.14",
+    "33abed8f3a3fc1bdd76ad6e31bb91af8.dlied1.cdntips.net": "59.42.242.147",
+    "f3964e708e230fa347ee6d95420a0a29.dlied1.cdntips.net": "116.31.98.26",
+    "f25aafa4cc1727a8084c54ece8d32788.dlied1.cdntips.net": "113.108.213.101",
+    "a0ff194589a65e2092525299a4d0985d.dlied1.cdntips.net": "116.31.98.11",
+    "0e080e0b23259a71e67464bdd4d8c99a.dlied1.cdntips.net": "113.108.213.13",
+    "17a261877137c3d777d7cd8f95407ad1.dlied1.cdntips.net": "175.12.122.131",
+    "6f275a318b559f2eb4298a31c34a115c.dlied1.cdntips.net": "113.105.142.20",
+    "965b1403f4cfc988f5046ca553401060.dlied1.cdntips.net": "113.108.213.67",
+    "a0e1863f33117e2e7ae87bf3ac3b3eec.dlied1.cdntips.net": "119.147.104.24",
+    "d191d458ab16b15344233173675a1cc6.dlied1.cdntips.net": "171.105.25.179",
+    "4e7a14a87cca77e46acfc83d07651f6f.dlied1.cdntips.net": "183.61.179.58",
+    "b4372d7e1806342ae52883b1d0e8a891.dlied1.cdntips.net": "121.12.169.241",
+    "b79e22f148d980efc27dca2c211fd49e.dlied1.cdntips.net": "116.31.98.21",
+    "be60612254e7003b45ce50479e5a7bb4.dlied1.cdntips.net": "113.105.162.13",
+    "ca9330ab99c82273f7c31d78809d355a.dlied1.cdntips.net": "113.108.213.146",
+    "6cfc39f3b7dd86b245dadc6dc3c1646c.dlied1.cdntips.net": "183.61.179.47",
+    "1448d00af4fbfc861562451effcec358.dlied1.cdntips.net": "116.31.98.44",
+    "bf063938944aad61298f58b114c1fcf5.dlied1.cdntips.net": "113.105.162.150",
+    "30bb2c8a00b36261a4a1a74d7e4200cf.dlied1.cdntips.net": "113.108.215.14",
+    "db1f467ddefc0cd02d1e5bd960f4cce9.dlied1.cdntips.net": "116.31.98.19",
+    "daf12da6b1a7a2328dc4649d90acfff6.dlied1.cdntips.net": "116.31.98.41",
+    "69d49ea4893a2545adf8e1df079dfa3f.dlied1.cdntips.net": "113.108.213.139",
+    "25541bbab6493d6c65ca866dd578b083.dlied1.cdntips.net": "116.31.98.39"
+  },
+  "mbps": 93.26032045756202,
+  "throughput_samples": [
+    {
+      "time": 1566.2337645,
+      "bytes": 0
+    },
+    {
+      "time": 1567.2537791,
+      "bytes": 0
+    },
+    {
+      "time": 1568.2642702,
+      "bytes": 3735552
+    },
+    {
+      "time": 1569.2739659,
+      "bytes": 13926400
+    },
+    {
+      "time": 1570.2836964,
+      "bytes": 25264128
+    },
+    {
+      "time": 1571.2925327,
+      "bytes": 36634624
+    },
+    {
+      "time": 1572.2976176,
+      "bytes": 47677440
+    },
+    {
+      "time": 1573.3038092,
+      "bytes": 58425344
+    },
+    {
+      "time": 1574.3083856,
+      "bytes": 69468160
+    },
+    {
+      "time": 1575.3129828,
+      "bytes": 83656704
+    },
+    {
+      "time": 1576.3165518,
+      "bytes": 95158272
+    },
+    {
+      "time": 1577.3217083,
+      "bytes": 107806720
+    },
+    {
+      "time": 1578.3256344,
+      "bytes": 120324096
+    },
+    {
+      "time": 1579.3286545,
+      "bytes": 129695744
+    },
+    {
+      "time": 1580.3334295,
+      "bytes": 137199616
+    },
+    {
+      "time": 1581.3360372,
+      "bytes": 147292160
+    },
+    {
+      "time": 1582.3386856,
+      "bytes": 158629888
+    },
+    {
+      "time": 1583.3408241,
+      "bytes": 172883968
+    },
+    {
+      "time": 1584.3455413,
+      "bytes": 185958400
+    },
+    {
+      "time": 1585.3488322,
+      "bytes": 196018176
+    },
+    {
+      "time": 1586.3503489,
+      "bytes": 208207872
+    },
+    {
+      "time": 1587.3529925,
+      "bytes": 219774976
+    },
+    {
+      "time": 1588.3572093,
+      "bytes": 233078784
+    },
+    {
+      "time": 1589.3604051,
+      "bytes": 244908032
+    },
+    {
+      "time": 1590.3616833,
+      "bytes": 255688704
+    },
+    {
+      "time": 1591.3664731,
+      "bytes": 269418496
+    },
+    {
+      "time": 1592.3686333,
+      "bytes": 282492928
+    },
+    {
+      "time": 1593.3719239,
+      "bytes": 297172992
+    },
+    {
+      "time": 1594.3746017,
+      "bytes": 311853056
+    },
+    {
+      "time": 1595.3774134,
+      "bytes": 327811072
+    },
+    {
+      "time": 1596.3799577,
+      "bytes": 337870848
+    },
+    {
+      "time": 1597.3841469,
+      "bytes": 350781440
+    },
+    {
+      "time": 1598.3871408,
+      "bytes": 366903296
+    },
+    {
+      "time": 1599.3896154,
+      "bytes": 382009344
+    },
+    {
+      "time": 1600.3927657,
+      "bytes": 400850944
+    },
+    {
+      "time": 1601.3950544,
+      "bytes": 412254208
+    }
+  ],
+  "peak_5s_mbps": 118.65511586247278
+}
