@@ -1,0 +1,11 @@
+{
+  "network_unchanged_since_checkpoint": true,
+  "firewall_unchanged_since_checkpoint": true,
+  "mwan3_unchanged_since_checkpoint": true,
+  "dhcp_unchanged_since_checkpoint": true,
+  "uhttpd_unchanged_since_checkpoint": true,
+  "active_policies": "Current ipv4 policies:\nbalanced:\n wwan2 (50%)\n wan (50%)\nwan_only:\n unreachable\nwan_priority:\n wwan2 (25%)\n wan (75%)\nwifi_priority:\n wwan2 (66%)\n wan (33%)\n\nCurrent ipv6 policies:\nbalanced:\n unreachable\nwan_only:\n unreachable\nwan_priority:\n unreachable\nwifi_priority:\n unreachable\n\n",
+  "active_rules": "Active ipv4 user rules:\n 1168 60795 - wan_priority  tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            multiport dports 443 \n 1181  239K - wan_priority  all  --  *      *       0.0.0.0/0            0.0.0.0/0            \n\nActive ipv6 user rules:\n    0     0 - wan_priority  tcp      *      *       ::/0                 ::/0                 multiport dports 443 \n   49  9987 - balanced  all      *      *       ::/0                 ::/0                 \n\n",
+  "offload": "firewall.@defaults[0].flow_offloading='1'\nfirewall.@defaults[0].flow_offloading_hw='1'\n",
+  "sqm_active_qdisc": ""
+}

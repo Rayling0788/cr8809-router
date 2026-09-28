@@ -1,7 +1,11 @@
 """Bounded HTTPS load through the physical Ethernet adapter; payload discarded."""
 import concurrent.futures, http.client, json, pathlib, socket, ssl, struct, subprocess, sys, time, urllib.parse, urllib.request, threading, random
 LABEL=sys.argv[1]; DURATION=int(sys.argv[2]); RATE=float(sys.argv[3]) if len(sys.argv)>3 else 0
+STREAMS=int(sys.argv[4]) if len(sys.argv)>4 else 4
 END=time.monotonic()+DURATION; START=time.monotonic(); cache={}; lock=threading.Lock()
+counts=[0]*STREAMS; throughput_samples=[{'time':START,'bytes':0}]; finished=threading.Event()
+def monitor():
+    while not finished.wait(1):throughput_samples.append({'time':time.monotonic(),'bytes':sum(counts)})
 def resolve(host):
     with lock:
         if host in cache:return cache[host]
@@ -38,6 +42,7 @@ def worker(i):
                     b=r.read(32768)
                     if not b:break
                     total+=len(b)
+                    counts[i]=total
                     if RATE:
                         delay=total/RATE-(time.monotonic()-START)
                         if delay>0:time.sleep(min(delay,max(0,END-time.monotonic())))
@@ -45,9 +50,13 @@ def worker(i):
             errors.append(str(e))
             if len(errors)>=3:break
     return {'bytes':total,'errors':errors}
-with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:results=list(ex.map(worker,range(4)))
+monitor_thread=threading.Thread(target=monitor);monitor_thread.start()
+with concurrent.futures.ThreadPoolExecutor(max_workers=STREAMS) as ex:results=list(ex.map(worker,range(STREAMS)))
+finished.set();monitor_thread.join()
 out={'label':LABEL,'duration':time.monotonic()-START,'streams':results,'dns':cache}
 out['mbps']=sum(r['bytes'] for r in results)*8/out['duration']/1e6
+out['throughput_samples']=throughput_samples
+out['peak_5s_mbps']=max(((b['bytes']-a['bytes'])*8/(b['time']-a['time'])/1e6 for a,b in zip(throughput_samples,throughput_samples[5:])),default=0)
 pathlib.Path('performance/results').mkdir(parents=True,exist_ok=True)
 pathlib.Path('performance/results',LABEL+'-download.json').write_text(json.dumps(out,indent=2))
 print(json.dumps(out,indent=2))
