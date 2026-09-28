@@ -1,0 +1,19 @@
+{
+  "link": "Connected to 80:07:1b:9c:54:25 (on phy0-sta0)\n\tSSID: gdut-516\n\tfreq: 2462\n\tRX: 81906 bytes (806 packets)\n\tTX: 2350 bytes (18 packets)\n\tsignal: 0 dBm\n\trx bitrate: 130.0 MBit/s MCS 15\n\ttx bitrate: 52.0 MBit/s MCS 11\n\n\tbss flags:\tshort-preamble short-slot-time\n\tdtim period:\t1\n\tbeacon int:\t100\n",
+  "ping": {
+    "10.40.72.1": "PING 10.40.72.1 (10.40.72.1): 56 data bytes\n64 bytes from 10.40.72.1: seq=0 ttl=64 time=4.090 ms\n64 bytes from 10.40.72.1: seq=1 ttl=64 time=3.853 ms\n64 bytes from 10.40.72.1: seq=2 ttl=64 time=4.556 ms\n64 bytes from 10.40.72.1: seq=3 ttl=64 time=5.755 ms\n64 bytes from 10.40.72.1: seq=4 ttl=64 time=4.260 ms\n64 bytes from 10.40.72.1: seq=5 ttl=64 time=8.249 ms\n64 bytes from 10.40.72.1: seq=6 ttl=64 time=4.080 ms\n64 bytes from 10.40.72.1: seq=7 ttl=64 time=4.159 ms\n64 bytes from 10.40.72.1: seq=8 ttl=64 time=4.090 ms\n64 bytes from 10.40.72.1: seq=9 ttl=64 time=6.798 ms\n64 bytes from 10.40.72.1: seq=10 ttl=64 time=2.737 ms\n64 bytes from 10.40.72.1: seq=11 ttl=64 time=5.750 ms\n64 bytes from 10.40.72.1: seq=12 ttl=64 time=7.933 ms\n64 bytes from 10.40.72.1: seq=13 ttl=64 time=3.608 ms\n64 bytes from 10.40.72.1: seq=14 ttl=64 time=2.685 ms\n64 bytes from 10.40.72.1: seq=15 ttl=64 time=3.098 ms\n64 bytes from 10.40.72.1: seq=16 ttl=64 time=5.760 ms\n64 bytes from 10.40.72.1: seq=17 ttl=64 time=6.952 ms\n64 bytes from 10.40.72.1: seq=18 ttl=64 time=4.275 ms\n64 bytes from 10.40.72.1: seq=19 ttl=64 time=4.263 ms\n\n--- 10.40.72.1 ping statistics ---\n20 packets transmitted, 20 packets received, 0% packet loss\nround-trip min/avg/max = 2.685/4.847/8.249 ms\n",
+    "8.163.113.0": "PING 8.163.113.0 (8.163.113.0): 56 data bytes\n64 bytes from 8.163.113.0: seq=0 ttl=49 time=23.909 ms\n64 bytes from 8.163.113.0: seq=1 ttl=49 time=23.436 ms\n64 bytes from 8.163.113.0: seq=2 ttl=49 time=23.405 ms\n64 bytes from 8.163.113.0: seq=3 ttl=49 time=22.685 ms\n64 bytes from 8.163.113.0: seq=4 ttl=49 time=25.251 ms\n64 bytes from 8.163.113.0: seq=5 ttl=49 time=30.549 ms\n64 bytes from 8.163.113.0: seq=6 ttl=49 time=23.344 ms\n64 bytes from 8.163.113.0: seq=7 ttl=49 time=22.478 ms\n64 bytes from 8.163.113.0: seq=8 ttl=49 time=23.047 ms\n64 bytes from 8.163.113.0: seq=9 ttl=49 time=25.014 ms\n64 bytes from 8.163.113.0: seq=10 ttl=49 time=24.265 ms\n64 bytes from 8.163.113.0: seq=11 ttl=49 time=22.416 ms\n64 bytes from 8.163.113.0: seq=12 ttl=49 time=28.687 ms\n64 bytes from 8.163.113.0: seq=13 ttl=49 time=24.019 ms\n64 bytes from 8.163.113.0: seq=14 ttl=49 time=22.192 ms\n64 bytes from 8.163.113.0: seq=15 ttl=49 time=21.759 ms\n64 bytes from 8.163.113.0: seq=16 ttl=49 time=22.241 ms\n64 bytes from 8.163.113.0: seq=17 ttl=49 time=22.354 ms\n64 bytes from 8.163.113.0: seq=18 ttl=49 time=26.803 ms\n64 bytes from 8.163.113.0: seq=19 ttl=49 time=25.239 ms\n\n--- 8.163.113.0 ping statistics ---\n20 packets transmitted, 20 packets received, 0% packet loss\nround-trip min/avg/max = 21.759/24.154/30.549 ms\n"
+  },
+  "restored": {
+    "campus": true,
+    "wireless": true,
+    "mwan3": true
+  },
+  "wan_ip": [
+    {
+      "address": "10.200.19.63",
+      "mask": 32,
+      "ptpaddress": "10.200.16.0"
+    }
+  ]
+}
