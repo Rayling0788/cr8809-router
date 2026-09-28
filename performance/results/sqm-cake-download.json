@@ -1,0 +1,30 @@
+{
+  "label": "sqm-cake",
+  "duration": 35.46459640000012,
+  "streams": [
+    {
+      "bytes": 9076736,
+      "errors": []
+    },
+    {
+      "bytes": 90472448,
+      "errors": []
+    },
+    {
+      "bytes": 8323072,
+      "errors": []
+    },
+    {
+      "bytes": 7569408,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "175.6.93.10",
+    "4e88f02137c1590cf132dece85335f14.dlied1.cdntips.net": "121.12.169.193",
+    "b4372d7e1806342ae52883b1d0e8a891.dlied1.cdntips.net": "121.12.169.241",
+    "be60612254e7003b45ce50479e5a7bb4.dlied1.cdntips.net": "113.105.162.13",
+    "98e40e54c630c805f45263922f1802af.dlied1.cdntips.net": "183.61.169.39"
+  },
+  "mbps": 26.04099315225809
+}

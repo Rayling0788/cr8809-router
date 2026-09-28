@@ -1,0 +1,30 @@
+{
+  "label": "controlled-baseline",
+  "duration": 35.75937400000021,
+  "streams": [
+    {
+      "bytes": 107544576,
+      "errors": []
+    },
+    {
+      "bytes": 104562688,
+      "errors": []
+    },
+    {
+      "bytes": 104792064,
+      "errors": []
+    },
+    {
+      "bytes": 107544576,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "171.105.26.53",
+    "314f8ef948d7196cd65a5bb07608d351.dlied1.cdntips.net": "116.31.98.32",
+    "db2bd45bf97f2d1c9a45f5faaf2a9f56.dlied1.cdntips.net": "116.31.98.28",
+    "25541bbab6493d6c65ca866dd578b083.dlied1.cdntips.net": "116.31.98.39",
+    "b919f9a887765a64f757b8acace3a23e.dlied1.cdntips.net": "116.31.99.15"
+  },
+  "mbps": 94.95555576560093
+}

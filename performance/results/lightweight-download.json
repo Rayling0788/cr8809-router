@@ -1,0 +1,30 @@
+{
+  "label": "lightweight",
+  "duration": 35.00278409999919,
+  "streams": [
+    {
+      "bytes": 52527104,
+      "errors": []
+    },
+    {
+      "bytes": 52527104,
+      "errors": []
+    },
+    {
+      "bytes": 52527104,
+      "errors": []
+    },
+    {
+      "bytes": 52527104,
+      "errors": []
+    }
+  ],
+  "dns": {
+    "dldir1.qq.com": "175.6.92.56",
+    "e968a698c4646f9735740a0e815f1029.dlied1.cdntips.net": "116.31.98.42",
+    "b79e22f148d980efc27dca2c211fd49e.dlied1.cdntips.net": "116.31.98.21",
+    "417e52dd4cfbda89dc00c01c00a93578.dlied1.cdntips.net": "116.31.99.168",
+    "d76b948809c4652ef69ad806f956e861.dlied1.cdntips.net": "183.61.179.59"
+  },
+  "mbps": 48.020960938362585
+}

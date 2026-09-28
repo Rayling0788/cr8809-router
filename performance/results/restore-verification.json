@@ -1,0 +1,8 @@
+{
+  "network_firewall_mwan3_dhcp_uhttpd_identical_to_before_test": true,
+  "no_cake_or_ingress_qdisc": true,
+  "sqm_boot_disabled": true,
+  "temporary_routing_removed": true,
+  "campus_https_login_protected": true,
+  "wake_rpc_online": true
+}
