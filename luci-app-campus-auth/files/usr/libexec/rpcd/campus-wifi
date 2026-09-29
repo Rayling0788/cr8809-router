@@ -1,0 +1,148 @@
+#!/bin/sh
+
+case "$1:$2" in
+	list:*)
+		 echo '{"status":{},"connect":{"ssid":"String","radio":"String","security":"String","key":"String"}}'
+		 exit 0
+		;;
+	call:connect|call:status) ;;
+	*) exit 1 ;;
+esac
+
+. /usr/share/libubox/jshn.sh
+if [ "$2" = status ]; then
+	json_init
+	json_add_string wifi_count "$(uci -q get campus.main.wifi_count)"
+	json_add_string single_wifi "$(uci -q get campus.main.single_wifi)"
+	for band in 2g 5g; do
+		case "$band" in
+			2g) station=wwan3_radio0; iface=wwan3 ;;
+			5g) station=wwan2_radio1; iface=wwan2 ;;
+		esac
+		net=$(ubus call "network.interface.$iface" status 2>/dev/null)
+		device=$(printf '%s' "$net" | jsonfilter -e '@.l3_device')
+		ip=$(printf '%s' "$net" | jsonfilter -e '@["ipv4-address"][0].address')
+		link=''
+		[ -z "$device" ] || link=$(iw dev "$device" link 2>/dev/null)
+		connected=0
+		case "$link" in 'Connected to '*) connected=1 ;; esac
+		actual=$(printf '%s\n' "$link" | sed -n 's/^[[:space:]]*SSID: //p')
+		enabled=1
+		[ "$(uci -q get "wireless.$station.disabled")" != 1 ] || enabled=0
+		json_add_object "$band"
+		json_add_boolean enabled "$enabled"
+		json_add_boolean connected "$connected"
+		json_add_string ssid "$actual"
+		json_add_string configured_ssid "$(uci -q get "wireless.$station.ssid")"
+		json_add_string ipv4 "$ip"
+		json_close_object
+	done
+	json_dump
+	exit 0
+fi
+read -r input
+json_load "$input" || exit 1
+json_get_vars ssid radio security key
+
+reply() {
+	json_init
+	json_add_boolean success "$1"
+	json_add_string message "$2"
+	json_dump
+	exit 0
+}
+
+[ -n "$ssid" ] || reply 0 'SSID 不能为空。'
+ssid_bytes=$(LC_ALL=C printf '%s' "$ssid" | wc -c | tr -d ' ')
+linefeed=$(printf '\n_')
+linefeed=${linefeed%_}
+cr=$(printf '\r')
+tab=$(printf '\t')
+case "$ssid" in *"$linefeed"*|*"$cr"*|*"$tab"*) reply 0 'SSID 不能包含换行符或制表符。' ;; esac
+[ "$ssid_bytes" -le 32 ] 2>/dev/null || reply 0 'SSID 长度不能超过 32 字节。'
+
+case "$radio" in
+	2g) station=wwan3_radio0; iface=wwan3; other=wwan2_radio1 ;;
+	5g) station=wwan2_radio1; iface=wwan2; other=wwan3_radio0 ;;
+	*) reply 0 '无线频段无效。' ;;
+esac
+
+case "$security" in
+	none)
+		key=''
+		;;
+	psk|psk2|psk-mixed)
+		case "$key" in *"$linefeed"*|*"$cr"*|*"$tab"*) reply 0 'Wi-Fi 密码不能包含控制字符。' ;; esac
+		key_bytes=$(LC_ALL=C printf '%s' "$key" | wc -c | tr -d ' ')
+		if [ "$key_bytes" -eq 64 ]; then
+			case "$key" in *[!a-fA-F0-9]*) reply 0 '64 位 WPA 密钥只能包含十六进制字符。' ;; esac
+		elif [ "$key_bytes" -lt 8 ] || [ "$key_bytes" -gt 63 ]; then
+			reply 0 'WPA 密码长度应为 8 到 63 个字节。'
+		fi
+		;;
+	sae|sae-mixed)
+		case "$key" in *"$linefeed"*|*"$cr"*|*"$tab"*) reply 0 'Wi-Fi 密码不能包含控制字符。' ;; esac
+		key_bytes=$(LC_ALL=C printf '%s' "$key" | wc -c | tr -d ' ')
+		[ "$key_bytes" -ge 1 ] && [ "$key_bytes" -le 63 ] || reply 0 'WPA3 密码长度应为 1 到 63 个字节。'
+		[ "$security" != sae-mixed ] || [ "$key_bytes" -ge 8 ] || reply 0 'WPA2/WPA3 混合模式密码至少需要 8 个字节。'
+		;;
+	*) reply 0 '该 Wi-Fi 加密方式暂不支持。' ;;
+esac
+
+lock=/var/lock/campus-wifi-connect
+mkdir "$lock" 2>/dev/null || reply 0 '已有连接操作正在处理，请稍后重试。'
+trap 'rmdir "$lock" 2>/dev/null' EXIT
+[ "$(uci -q get "wireless.$station.mode")" = sta ] && [ "$(uci -q get "wireless.$station.network")" = "$iface" ] && [ "$(uci -q get "wireless.$other.mode")" = sta ] || reply 0 '无线接口配置与本设备不匹配，未作修改。'
+[ -z "$(uci changes wireless)$(uci changes campus)" ] || reply 0 '请先保存或撤销其他页面尚未应用的无线设置。'
+
+umask 077
+backup=$(mktemp -d /tmp/campus-wifi.XXXXXX) || reply 0 '无法准备临时配置备份。'
+if ! cp /etc/config/wireless "$backup/wireless" || ! cp /etc/config/campus "$backup/campus"; then
+	rm -rf "$backup"
+	reply 0 '无法读取当前无线配置。'
+fi
+
+restore_config() {
+	cp "$backup/wireless" /etc/config/wireless
+	cp "$backup/campus" /etc/config/campus
+	uci -q revert wireless
+	uci -q revert campus
+	wifi reload >/dev/null 2>&1
+	/etc/init.d/firewall reload >/dev/null 2>&1
+	rm -rf "$backup"
+}
+
+if ! uci set "wireless.$station.ssid=$ssid" \
+	|| ! uci set "wireless.$station.encryption=$security"; then
+	restore_config
+	reply 0 '无法更新无线配置，已恢复之前的设置。'
+fi
+
+if [ "$security" = none ]; then
+	uci -q delete "wireless.$station.key"
+else
+	uci set "wireless.$station.key=$key" || {
+		restore_config
+		reply 0 '无法保存无线密码，已恢复之前的设置。'
+	}
+fi
+uci -q delete "wireless.$station.bssid"
+case "$security" in
+	sae) uci set "wireless.$station.ieee80211w=2" ;;
+	sae-mixed) uci set "wireless.$station.ieee80211w=1" ;;
+	*) uci -q delete "wireless.$station.ieee80211w" ;;
+esac
+
+if ! uci commit wireless || ! uci commit campus; then
+	restore_config
+	reply 0 '无法保存无线配置，已恢复之前的设置。'
+fi
+
+if ! wifi reload >/dev/null 2>&1; then
+	restore_config
+	reply 0 '无线网络重新加载失败，已恢复之前的设置。'
+fi
+rm -rf "$backup"
+sleep 5
+/etc/init.d/firewall reload >/dev/null 2>&1
+reply 1 '设置已保存并触发重连。若新热点需要校园网认证，现有认证服务会继续处理；可在流量看板查看接口状态。'

@@ -7,6 +7,7 @@
 - [刷机与多 WAN 实施方案](CR8809_刷机与无线多WAN实施方案.md)：刷机背景、设备检查记录、来源和实施边界。
 - [原厂设备分区备份](firmware/original-device/README.md)：26 个非空 MTD/UBI 镜像，约 190.70 MiB，附分区清单和 SHA-256。
 - `baseline/`：脱敏后的配置检查点和已部署的自定义功能。
+- [校园 Wi-Fi 选择页面](luci-app-campus-auth/README.md)：分频段扫描、选择热点及查看实时启用状态。
 - `performance/`：网络测试脚本与结果。
 
 ## 设备和刷机注意事项

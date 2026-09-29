@@ -15,3 +15,5 @@
 /performance/private/
 /performance/downloads/
 __pycache__/
+
+!/luci-app-campus-auth/

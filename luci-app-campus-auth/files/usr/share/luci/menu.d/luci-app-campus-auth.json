@@ -1,0 +1,7 @@
+{
+	"admin/network/campus-auth": {
+		"title": "Wi-Fi 选择与校园认证",
+		"order": 605,
+		"action": { "type": "view", "path": "campus/wifi-select-v4" }
+	}
+}

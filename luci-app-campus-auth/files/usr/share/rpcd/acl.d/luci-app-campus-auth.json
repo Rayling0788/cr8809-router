@@ -1,0 +1,13 @@
+{
+	"luci-app-campus-auth": {
+		"description": "Campus Wi-Fi authentication settings and Wi-Fi selection",
+		"read": {
+			"uci": [ "campus" ],
+			"ubus": { "iwinfo": [ "scan" ], "campus-wifi": [ "status" ] }
+		},
+		"write": {
+			"uci": [ "campus" ],
+			"ubus": { "campus-wifi": [ "connect" ] }
+		}
+	}
+}
